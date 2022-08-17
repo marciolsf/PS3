@@ -72,7 +72,7 @@ process {
         Clear-Host
         if ($pretty) {
             $finalTemp
-        }
+        } #we need to sort before we can remove duplicates
         else { $finalTemp | Sort-Object -Property time | Get-Unique -AsString  | format-table }
 
     }
