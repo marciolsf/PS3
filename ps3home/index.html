@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>PSHome offline installer</title>
+</head>
+
+<body>
+  <h2>How to install Home on your PS3</h2>
+</body>
+
+<h1>DISCLAIMER</h1>
+<blockquote style="background-color:rgb(217, 217, 217) ;"> This requires a CFW or HEN. I will not assist with getting
+  this setup.
+  <b> Install at your own risk.</b>
+  The files provided here are for preservation only. I do not profit from this work, and I do not encourage/condone
+  piracy.
+</blockquote>
+
+<h2>Basic installation steps</h2>
+<ol type="1">
+  <li>Install docker (if you're seeing this page, then this is likely already done)</li>
+  <li>Make two copies of the xml files in <i>/dev_flash/vsh/resource/explore/xmb</i> (one for you to edit, and one for
+    you to restore from if you screw up</li>
+  <li>In your registory.xml file, locate the "fixed_items" key and add the following entry
+    <pre>
+    <textarea style="border:none;" cols="120" rows="2">
+    <Pair key="psh"><String>xmb://localhost/%flash/xmb/category_psn.xml#seg_home</String></Pair>
+  </textarea>
+</pre>
+  </li>
+  <li>In your category_psn.xml file, under "items", add the following query. Make sure you'are adding it under the <view
+      id="root">, and not tool_root, shop_root, etc.
+      <pre>
+        <textarea style="border:none;" cols="120" rows="5">
+      <Query class="type:x-xmb/folder-pixmap" key="seg_home"
+        src="xcb://localhost/exists?having=off&rquery=root.fixed_items.psh&cond=Ae+Game:Common.dirPath /dev_hdd0/game+Ae+Game:Common.fileName NPIA00010&reload=HomeInstaller" />
+      </textarea>
+    </pre>
+  </li>
+  <li>
+    Still in the category_psn.xml file, add the following view. In the pkg_source key, replace [my local computer IP
+    address] with your computer IP.
+    <pre>
+      <textarea style="border:none;" cols="120" rows="33">
+        <View id="seg_home">
+          <Attributes>
+            <Table key="home_install">
+              <Pair key="info">
+                <>net_package_install_with_eula</>
+              </Pair>
+              <Pair key="pkg_src">
+                <>http://[my local computer IP address]/EP9000-NPIA00010_00-HDK0135000000000.pkg</>
+              </Pair>
+              <Pair key="content_name">
+                <>msg_playstation_home</>
+              </Pair>
+              <Pair key="content_id">
+                <>EP9000-NPIA00010_00-HDK0135000000000</>
+              </Pair>
+              <Pair key="instruction_rsc">
+                <>msg_playstation_home_explanation</>
+              </Pair>
+              <Pair key="prod_pict_path">
+                <>/dev_flash/vsh/resource/explore/icon/icon_home.png</>
+              </Pair>
+              <Pair key="focus">
+                <>last</>
+              </Pair>
+            </Table>
+          </Attributes>
+          <Items>
+            <Item class="type:x-xmb/xmlnpsignup" key="home_install" attr="home_install" />
+          </Items>
+        </View>
+    </textarea>
+  </pre>
+  </li>
+  <li>You should now have the playstation home icon in your XMB. Launch it, and it should download the package from the docker image. The download itself will takea  while, and the installation will take even loger.</li>
+</ol>
+
+</html>
