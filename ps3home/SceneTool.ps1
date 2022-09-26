@@ -3,7 +3,8 @@ param
     [Parameter()][string]$root_folder,
     [Parameter()][switch]$Check_Scene,
     [Parameter()][switch]$Check_SDC,
-    [Parameter()][switch]$Crawl_Scene_Assets
+    [Parameter()][switch]$Crawl_Scene_Assets,
+    [Parameter()][switch]$Print_Found_Assets
 )
 
 
@@ -17,14 +18,13 @@ $Scene_Found
 #$Crawl_Scene_Assets = $true
 
 foreach ($c in $base_home.SCENELIST.scene) {
-    Write-Verbose "Checking Scene [$($c.name)] on [$($c.config)]..." 
+    Write-Host "Checking Scene [$($c.name)] on [$($c.config)]..." -ForegroundColor White
 
     $ScenePath = "$($root_folder)\$($c.config)"
     
     <#using the -replace function works recursively, replacing all instances of the SCENE word, instead of just .SCENE
     So here we just the .replace method instead
     #>
-    $SDCPath = $ScenePath.Replace(".scene", ".SDC")
 
     if ($Check_Scene) {
         if (-not (Test-Path -path $ScenePath)) { 
@@ -32,12 +32,16 @@ foreach ($c in $base_home.SCENELIST.scene) {
             $Scene_Found = $false
         }
         else {
-            Write-Verbose "Scene file $($ScenePath) found"
+            if ($Print_Found_Assets) {
+                Write-Host "Scene file $($ScenePath) found" -ForegroundColor Blue
+            }
             $Scene_Found = $true
         }
     }
 
+
     if ($Check_SDC) {
+        $SDCPath = $ScenePath.Replace(".scene", ".SDC")
         if (-not(Test-Path -Path $SDCPath)) {
             write-verbose "Testing $($SDCPath)"
             write-host "SDC file not found --> $($SDCPath)" -ForegroundColor Red
@@ -47,17 +51,15 @@ foreach ($c in $base_home.SCENELIST.scene) {
         }
     }
 
-    #only crawl the scene if it was found.
+    #only crawl the scene if the scene file was found.
     if ($Crawl_Scene_Assets -and $Scene_Found) {
         
-        [xml]$assets = Get-Content $ScenePath 
+        [xml]$SceneFile = Get-Content $ScenePath 
             
-        foreach ($a in $assets) {
-            #$AssetVersion = $a.game
-            #Write-Verbose $a.game -ForegroundColor Blue
-                    
-            $AssetPath = $a.game.assetFolder.asset.Source
-            foreach ($path in $assetPath) {
+        foreach ($a in $SceneFile) {
+            $Assets = $a.game.assetFolder.asset
+
+            foreach ($asset in $assets) {
                 <#  The source attribute of the asset element indicates the location of the file.
                             There's no consistency on how that's declared -- The following are all valid
                             source="file:///resource_root/Build/environments -- notice the 3 slashes
@@ -74,35 +76,38 @@ foreach ($c in $base_home.SCENELIST.scene) {
                             First I add the root folder to any attributes that don't have it
                             Then I replace 3 slashes to only 2 slashes
                         #>
-                write-host "****** Original path $($path)" -ForegroundColor White
-                if ($path -inotlike "*build/environments*") {
-                    $path = $path -replace ("file://resource_root", "$($root_folder)/")
-                    write-host $path -ForegroundColor Green
-                }
 
+                $path = $asset.source
+                $name = $asset.name        
+                #write-host "**** Original path $($path)" -ForegroundColor White
+                
                 if ($path -inotlike "file*") {
                     $path = "$($root_folder)/$($path)"
-                    write-host $path -ForegroundColor blue
-                }                
+                    #write-host "**** Original path $($path)" -ForegroundColor DarkGray
+                    #write-host $path -ForegroundColor blue
+                }   
+                
+                
+                if ($path -inotlike "*build/environments*") {
+                    $path = $path -replace ("file://resource_root/", "$($root_folder)/")
+                    #write-host "****** Replaced path $($path)" -ForegroundColor DarkYellow
+                }             
 
                 $path = $path -replace ("file:///", "file://")
                 $path = $path -Replace ("file://resource_root/build/", "$($root_folder)/") 
                         
                 if (-not(Test-Path -Path $path)) {
-                    write-host "Asset not found ---  $($path) not found" -ForegroundColor Red
+                    write-host "------ Asset name=$($name) not found at: $($path)" -ForegroundColor Red
                 }
-                <#else { 
-                            write-host "---  $($path) was found" -ForegroundColor Green
-                        }#>
+                else { 
+                    if ($Print_Found_Assets) {        
+                        write-host "++++++  Asset name=$($name) found at: $($path)" -ForegroundColor Green
+                    }
+                }
             }
                     
         }
     }
-    #}
-    #}
-
-
-
 
 }
 
