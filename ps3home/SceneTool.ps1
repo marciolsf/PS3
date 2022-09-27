@@ -13,14 +13,20 @@ $Scene_Found
 
 [xml]$base_home = get-content C:\Users\iamma\source\repos\PS3\ps3home\LOCALSCENELIST_BASIC.XML
 
-#$Check_Scene = $true
-#$Check_SDC = $true
-#$Crawl_Scene_Assets = $true
-
+$total = $base_home.SCENELIST.scene.count
+$i = 1
+[int32]$pctg=0
+$AllMessages = ""
 foreach ($c in $base_home.SCENELIST.scene) {
-    Write-Host "Checking Scene [$($c.name)] on [$($c.config)]..." -ForegroundColor White
-
     $ScenePath = "$($root_folder)\$($c.config)"
+
+    $pctg = (($i / $total) *100)#.ToInt16()
+    #write-host "$($pctg) -- $($i) -- $($total)" -ForegroundColor red
+    #write-host $i
+
+    Write-Progress -Activity "Checking scenes" -Status "$($c.name)" -PercentComplete $pctg
+
+    $Printed_Error_already = $false
     
     <#using the -replace function works recursively, replacing all instances of the SCENE word, instead of just .SCENE
     So here we just the .replace method instead
@@ -28,7 +34,7 @@ foreach ($c in $base_home.SCENELIST.scene) {
 
     if ($Check_Scene) {
         if (-not (Test-Path -path $ScenePath)) { 
-            Write-Host "Scene file not found --> $($ScenePath)" -ForegroundColor Red 
+            $AllMessages += "****** Scene file $($ScenePath) not found" | Out-String
             $Scene_Found = $false
         }
         else {
@@ -44,7 +50,7 @@ foreach ($c in $base_home.SCENELIST.scene) {
         $SDCPath = $ScenePath.Replace(".scene", ".SDC")
         if (-not(Test-Path -Path $SDCPath)) {
             write-verbose "Testing $($SDCPath)"
-            write-host "SDC file not found --> $($SDCPath)" -ForegroundColor Red
+            $AllMessages += "****** SDC file $($SDCPath) not found" | Out-String
         }
         else {
             Write-Verbose "SDC File $($SDCPath) found"
@@ -79,25 +85,28 @@ foreach ($c in $base_home.SCENELIST.scene) {
 
                 $path = $asset.source
                 $name = $asset.name        
-                #write-host "**** Original path $($path)" -ForegroundColor White
                 
                 if ($path -inotlike "file*") {
                     $path = "$($root_folder)/$($path)"
-                    #write-host "**** Original path $($path)" -ForegroundColor DarkGray
-                    #write-host $path -ForegroundColor blue
                 }   
                 
                 
                 if ($path -inotlike "*build/environments*") {
                     $path = $path -replace ("file://resource_root/", "$($root_folder)/")
-                    #write-host "****** Replaced path $($path)" -ForegroundColor DarkYellow
                 }             
 
                 $path = $path -replace ("file:///", "file://")
                 $path = $path -Replace ("file://resource_root/build/", "$($root_folder)/") 
                         
                 if (-not(Test-Path -Path $path)) {
-                    write-host "------ Asset name=$($name) not found at: $($path)" -ForegroundColor Red
+                    
+                    if ($Printed_Error_already -eq $false) {
+                        $AllMessages += "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" | Out-String
+                        $AllMessages += " Scene file $($c.name) located at $($c.config)" | Out-String
+                        $AllMessages += "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" | Out-String
+                        $Printed_Error_already = $true
+                    }
+                    $AllMessages += "------ Asset name=$($name) not found at: $($path)" | Out-String
                 }
                 else { 
                     if ($Print_Found_Assets) {        
@@ -108,6 +117,9 @@ foreach ($c in $base_home.SCENELIST.scene) {
                     
         }
     }
-
+$i = $i +1
 }
+
+Write-Host "The following errors were detected:"
+write-host $AllMessages
 
