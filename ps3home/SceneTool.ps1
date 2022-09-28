@@ -4,6 +4,7 @@ param
     [Parameter()][switch]$Check_Scene,
     [Parameter()][switch]$Check_SDC,
     [Parameter()][switch]$Crawl_Scene_Assets,
+    [Parameter()][switch]$Check_Game_Objects,
     [Parameter()][switch]$Print_Found_Assets
 )
 
@@ -15,21 +16,21 @@ $Scene_Found
 
 $total = $base_home.SCENELIST.scene.count
 $i = 1
-[int32]$pctg=0
+[int32]$pctg = 0
 $AllMessages = ""
-foreach ($c in $base_home.SCENELIST.scene) {
-    $ScenePath = "$($root_folder)\$($c.config)"
+foreach ($base_scene in $base_home.SCENELIST.scene) {
+    $ScenePath = "$($root_folder)\$($base_scene.config)"
 
-    $pctg = (($i / $total) *100)#.ToInt16()
+    $pctg = (($i / $total) * 100)#.ToInt16()
     #write-host "$($pctg) -- $($i) -- $($total)" -ForegroundColor red
     #write-host $i
 
-    Write-Progress -Activity "Checking scenes" -Status "$($c.name)" -PercentComplete $pctg
+    Write-Progress -Activity "Checking scenes" -Status "$($base_scene.name)" -PercentComplete $pctg
 
     $Printed_Error_already = $false
     
-    <#using the -replace function works recursively, replacing all instances of the SCENE word, instead of just .SCENE
-    So here we just the .replace method instead
+    <# The -replace function works recursively, replacing all instances of the SCENE word, instead of just .SCENE
+    Some scenes have the worde SCENE as part of the name, besides the extension, so here we just the .replace method instead
     #>
 
     if ($Check_Scene) {
@@ -58,15 +59,25 @@ foreach ($c in $base_home.SCENELIST.scene) {
     }
 
     #only crawl the scene if the scene file was found.
-    if ($Crawl_Scene_Assets -and $Scene_Found) {
-        
+    if ($Scene_Found) {
         [xml]$SceneFile = Get-Content $ScenePath 
-            
-        foreach ($a in $SceneFile) {
-            $Assets = $a.game.assetFolder.asset
 
-            foreach ($asset in $assets) {
-                <#  The source attribute of the asset element indicates the location of the file.
+        if ($Check_Game_Objects) {
+            foreach ($s in $SceneFile) {
+                $games = $s.game.gameObjectFolder.GameObject
+                foreach ($gameObject in $games) {
+                    write-host $base_scene.config -ForegroundColor Blue
+                    write-host "Game Name: $($gameObject.name) -- Game Object type: $($gameObject.Type) -- Game ID: $($gameObject.game) -- GameName (Internal?): $($gameObject.gameName) -- UUID: $($gameObject.UUID)" -ForegroundColor Green
+                }
+            }
+
+        }
+        if ($Crawl_Scene_Assets) {                                
+            foreach ($s in $SceneFile) {
+                $Assets = $s.game.assetFolder.asset
+
+                foreach ($asset in $assets) {
+                    <#  The source attribute of the asset element indicates the location of the file.
                             There's no consistency on how that's declared -- The following are all valid
                             source="file:///resource_root/Build/environments -- notice the 3 slashes
                             source="file://resource_root/Build/environments -- only 2 slashes
@@ -83,41 +94,42 @@ foreach ($c in $base_home.SCENELIST.scene) {
                             Then I replace 3 slashes to only 2 slashes
                         #>
 
-                $path = $asset.source
-                $name = $asset.name        
+                    $path = $asset.source
+                    $name = $asset.name        
                 
-                if ($path -inotlike "file*") {
-                    $path = "$($root_folder)/$($path)"
-                }   
+                    if ($path -inotlike "file*") {
+                        $path = "$($root_folder)/$($path)"
+                    }   
                 
                 
-                if ($path -inotlike "*build/environments*") {
-                    $path = $path -replace ("file://resource_root/", "$($root_folder)/")
-                }             
+                    if ($path -inotlike "*build/environments*") {
+                        $path = $path -replace ("file://resource_root/", "$($root_folder)/")
+                    }             
 
-                $path = $path -replace ("file:///", "file://")
-                $path = $path -Replace ("file://resource_root/build/", "$($root_folder)/") 
+                    $path = $path -replace ("file:///", "file://")
+                    $path = $path -Replace ("file://resource_root/build/", "$($root_folder)/") 
                         
-                if (-not(Test-Path -Path $path)) {
+                    if (-not(Test-Path -Path $path)) {
                     
-                    if ($Printed_Error_already -eq $false) {
-                        $AllMessages += "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" | Out-String
-                        $AllMessages += " Scene file $($c.name) located at $($c.config)" | Out-String
-                        $AllMessages += "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" | Out-String
-                        $Printed_Error_already = $true
+                        if ($Printed_Error_already -eq $false) {
+                            $AllMessages += "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" | Out-String
+                            $AllMessages += " Scene file $($base_scene.name) located at $($base_scene.config)" | Out-String
+                            $AllMessages += "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" | Out-String
+                            $Printed_Error_already = $true
+                        }
+                        $AllMessages += "------ Asset name=$($name) not found at: $($path)" | Out-String
                     }
-                    $AllMessages += "------ Asset name=$($name) not found at: $($path)" | Out-String
-                }
-                else { 
-                    if ($Print_Found_Assets) {        
-                        write-host "++++++  Asset name=$($name) found at: $($path)" -ForegroundColor Green
+                    else { 
+                        if ($Print_Found_Assets) {        
+                            write-host "++++++  Asset name=$($name) found at: $($path)" -ForegroundColor Green
+                        }
                     }
                 }
+                    
             }
-                    
         }
     }
-$i = $i +1
+    $i = $i + 1
 }
 
 Write-Host "The following errors were detected:"
