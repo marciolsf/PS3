@@ -24,3 +24,7 @@ When building your own Playstation Home package, you have to make sure that all 
 * $RootHome -- The location of your USRDIR folder (just like with SceneTool.ps1)
 * $DoFiles -- Set this to make changes to FILES only
 * $DoFolders -- Rename folders as well
+
+**DockerFile**
+
+This was an experiment on making the pkg file via a docker web container, instead of copying the whole 20GB pkg file in your ps3, and then installing everything (a nearly 2 hour process!). This is usefull if you are having problems sending a large package via FTP or USB. Note it doesn't make installation faster, it just saves the time to copy the package to the PS3 itself.
