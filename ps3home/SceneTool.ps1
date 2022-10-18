@@ -1,40 +1,38 @@
 [cmdletbinding()]
 param
-(# Root folder for your USRDIR path
-    [Parameter(Mandatory)][string]$root_folder,
-    [Parameter()][switch]$Check_Scene,
-    [Parameter()][switch]$Check_SDC,
-    [Parameter()][switch]$Crawl_Scene_Assets,
-    [Parameter()][switch]$Check_Game_Objects,
-    [Parameter()][switch]$Check_Objects,
+(
+    # Root folder for your USRDIR path    
+    [Parameter(Mandatory)][string]$root_folder, 
+    # Location of your main LOCALSCENELIST.XML file (or equivalent)
+    [Parameter(Mandatory)][string]$SceneListFilePath,
     [Parameter()][switch]$Print_Found_Assets
+
 )
 
+#Main config parameters
+$Check_Scene = $true #checks all scene files -- mandatory for all other actions besides SDC
+$Check_SDC = $true #chec
+$Crawl_Scene_Assets = $true #crawls each of the asset items in the .SCENE file
+$Check_Game_Objects = $true #crawls for each of the **linked** minigames from the .SCENE file
+$Check_All_Objects = $false #crawls through ALL folders in the OBJECTS folder. Not sure this is really needed, since in theory objects not linked are never used anyway.
 
-#$root_folder = "C:\bin\homeclient\NPIA00010\NPIA00010\USRDIR"
-$Scene_Found
 
-[xml]$base_home = get-content C:\Users\iamma\source\repos\PS3\ps3home\LOCALSCENELIST_BASIC.XML
+#[xml]$base_home = get-content C:\Users\iamma\source\repos\PS3\ps3home\LOCALSCENELIST_BASIC.XML
+#base variables
+[xml]$base_home = get-content $SceneListFilePath
 [xml]$object_catalogentry
-#$object_root = "$($root_folder)\objects"
-
 $total = $base_home.SCENELIST.scene.count
 $i = 1
 $y = 1
 [int32]$pctg = 0
 $AllMessages = ""
-#$clothing = ""
-#$entitlements = ""
-#$mini_games = ""
-#$Printed_Game_Error_Already = $false
+$Scene_Found
 
 
 foreach ($base_scene in $base_home.SCENELIST.scene) {
     $ScenePath = "$($root_folder)\$($base_scene.config)"
 
-    $pctg = (($i / $total) * 100)#.ToInt16()
-    #write-host "$($pctg) -- $($i) -- $($total)" -ForegroundColor red
-    #write-host $i
+    $pctg = (($i / $total) * 100)
 
     Write-Progress -id 1 -Activity "Checking scenes" -Status "$($base_scene.name)" -PercentComplete $pctg
 
@@ -46,12 +44,12 @@ foreach ($base_scene in $base_home.SCENELIST.scene) {
 
     if ($Check_Scene) {
         if (-not (Test-Path -path $ScenePath)) { 
-            $AllMessages += "****** Scene file $($ScenePath) not found" | Out-String
+            $AllMessages += "------ $($ScenePath)" | Out-String
             $Scene_Found = $false
         }
         else {
             if ($Print_Found_Assets) {
-                Write-Host "Scene file $($ScenePath) found" -ForegroundColor Blue
+                $foundStuff += "++++++ Scene file $($ScenePath) found" | Out-String
             }
             $Scene_Found = $true
         }
@@ -61,11 +59,12 @@ foreach ($base_scene in $base_home.SCENELIST.scene) {
     if ($Check_SDC) {
         $SDCPath = $ScenePath.Replace(".scene", ".SDC")
         if (-not(Test-Path -Path $SDCPath)) {
-            write-verbose "Testing $($SDCPath)"
-            $AllMessages += "****** SDC file $($SDCPath) not found" | Out-String
+            $AllMessages += "------ $($SDCPath)" | Out-String
         }
         else {
-            Write-Verbose "SDC File $($SDCPath) found"
+            if ($Print_Found_Assets) {
+                $foundStuff += "++++++ SDC File $($SDCPath) found" | Out-String
+            }
         }
     }
 
@@ -75,63 +74,67 @@ foreach ($base_scene in $base_home.SCENELIST.scene) {
 
         if ($Check_Game_Objects) {
             foreach ($s in $SceneFile) {
-                $games = $s.game.gameObjectFolder.GameObject#.folder.gameObject
-                $Printed_Game_Error_Already = $false
-                foreach ($gameObject in $games) {
-                    #the gameID attribute maps to a folder under the usrdir\objects folder
-                    $GameID = $gameObject.game
-                    $game_objects_path = "$($root_folder)\objects\$($GameID)"
-                    #does the resources.xml file exist?
-                    if (Test-Path "$($game_objects_path)\resources.xml") {
+                $children = $s.ChildNodes | Select-Object -ExpandProperty childnodes
+                #write-host $children.name
+                foreach ($c in $children) {
+                    $subChild = $c.childnodes | Select-Object -ExpandProperty childnodes
+                    foreach ($sc in $subChild) {
+                        if ($null -ne $sc.game) {
                         
-                        #the resources.xml file describes all the contents of the Game
-                        <#Every resource has 4 main components:
+                            $game_objects_path = "$($root_folder)\objects\$($sc.game)"
+                            if (test-path $game_objects_path) {
+                                if ($Print_Found_Assets) {
+                                    $foundStuff += "++++++ Scene $($base_scene.name) ($($ScenePath)) contains [$($sc.game)] ($($sc.gameName))" | Out-String
+                                }
+                                #does the resources.xml file exist?
+                                if (Test-Path "$($game_objects_path)\resources.xml") {
+                                    
+                                    #the resources.xml file describes all the contents of the Game
+                                    #Every resource has 4 main components:
+            
+                                    # * model
+                                    # * particle
+                                    # * collision
+                                    # * lua
+                                    
+                                    #Each of these has a file="" attribute, and we need to map each attribute to their own collection, 
+                                    #in order to parse them
 
-                        * model
-                        * particle
-                        * collision
-                        * lua
-                        
-                        Each of these has a file="" attribute, and we need to map each of them to their own collection 
-                        in order to parse them
+                                    [xml]$game_resources = get-content "$($game_objects_path)\resources.xml"
+                                    foreach ($resource in $game_resources) {
 
-                        #>
-                        
-                        [xml]$game_resources = get-content "$($game_objects_path)\resources.xml"
-                        foreach ($resource in $game_resources) {
-                            $models = $resource.resources.local.model
-                            $particles = $resource.resources.local.particle
-                            $collisions = $resource.resources.local.collision
-                            $lua = $resource.resources.local.lua
-                            foreach ($m in $models) {                            
-                                if (-not(Test-Path -Path "$($root_folder)\$($m.file)" )) { 
-                                    $notfound += "$($m.name) -- $($m.file)" | Out-String
+                                        $models = $resource.resources.local.model
+                                        $particles = $resource.resources.local.particle
+                                        $collisions = $resource.resources.local.collision
+                                        $lua = $resource.resources.local.lua
+                                        
+                                        foreach ($m in $models) {                            
+                                            if (-not(Test-Path -Path "$($root_folder)\$($m.file)" )) { 
+                                                $notfound += "$($m.name) -- $($m.file)" | Out-String
+                                            }
+                                        }
+                                        foreach ($p in $particles) {
+                                            if (-not(Test-Path -Path "$($root_folder)\$($p.file)" )) { 
+                                                $notfound += "$($p.name) -- $($p.file)" | Out-String
+                                            }                                
+                                        }
+                                        foreach ($c in $collisions) {
+                                            if (-not(Test-Path -Path "$($root_folder)\$($c.file)" )) { 
+                                                $notfound += "$($c.name) -- $($c.file)" | Out-String
+                                            }                                                                
+                                        }
+                                        foreach ($l in $lua) {
+                                            if (-not(Test-Path -Path "$($root_folder)\$($l.file)" )) {  
+                                                $notfound += "$($l.name) -- $($l.file)" | Out-String
+                                            }                                
+                                        }
+                                    }
                                 }
                             }
-                            foreach ($p in $particles) {
-                                if (-not(Test-Path -Path "$($root_folder)\$($p.file)" )) { 
-                                    $notfound += "$($p.name) -- $($p.file)" | Out-String
-                                }                                
-                            }
-                            foreach ($c in $collisions) {
-                                if (-not(Test-Path -Path "$($root_folder)\$($c.file)" )) { 
-                                    $notfound += "$($c.name) -- $($c.file)" | Out-String
-                                }                                                                
-                            }
-                            foreach ($l in $lua) {
-                                if (-not(Test-Path -Path "$($root_folder)\$($l.file)" )) {  
-                                    $notfound += "$($l.name) -- $($l.file)" | Out-String
-                                }                                
+                            else {
+                                $objectFolderNotFound += "------ Scene $($base_scene.name) ($($ScenePath)) missing [$($sc.game)] ($($sc.gameName))" | Out-String
                             }
                         }
-                    }
-                    elseif ($null -eq $GameID) { #The scene did not have a game attribute, or the attribute was null
-                        #if ($null -eq $GameID ) {Write-Host "GameID is Null" -ForegroundColor Red}
-                        #write-host "Objects folder $($game_objects_path) for $($base_scene.config) not found" -ForegroundColor Red
-                        #if ($Printed_Game_Error_Already = $false) {
-                            $objectFolderNotFound += "The $($base_scene.name) did not have a game UUID" | Out-String
-                            #$Printed_Game_Error_Already = $true
-                        #} #else {Write-Host "derp"}
                     }
                 }
             }
@@ -176,16 +179,16 @@ foreach ($base_scene in $base_home.SCENELIST.scene) {
                     if (-not(Test-Path -Path $path)) {
                     
                         if ($Printed_Scene_Error_Already -eq $false) {
-                            $AllMessages += "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" | Out-String
-                            $AllMessages += " Scene file $($base_scene.name) located at $($base_scene.config)" | Out-String
-                            $AllMessages += "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" | Out-String
+                            #$AllMessages += "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" | Out-String
+                            #$AllMessages += " Scene file $($base_scene.name) located at $($base_scene.config)" | Out-String
+                            #$AllMessages += "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" | Out-String
                             $Printed_Scene_Error_Already = $true
                         }
-                        $AllMessages += "------ Asset name=$($name) not found at: $($path)" | Out-String
+                        $missingAssets += "------ Scene $($base_scene.name) ($($base_scene.config)) missing asset name=$($name) ($($path))" | Out-String
                     }
                     else { 
                         if ($Print_Found_Assets) {        
-                            write-host "++++++  Asset name=$($name) found at: $($path)" -ForegroundColor Green
+                            $foundStuff += "++++++ Asset name=$($name) found at: $($path)" | Out-String
                         }
                     }
                 }
@@ -196,7 +199,7 @@ foreach ($base_scene in $base_home.SCENELIST.scene) {
     $i = $i + 1
 }
 
-if ($Check_Objects) {
+if ($Check_All_Objects) {
     $object_folders = Get-ChildItem "$($root_folder)\objects" -Directory
     $total_folders = $object_folders.count
     foreach ($o_folder in $object_folders) {
@@ -223,35 +226,44 @@ if ($Check_Objects) {
     }
 }
 
-if ($AllMessages.Length -gt 0 -or $notfound.Length -gt 0 -or $objectFolderNotFound.Length -gt 0) {
-    Write-Host "The following errors were detected:"
+if ($AllMessages.Length -gt 0 -or $notfound.Length -gt 0 -or $objectFolderNotFound.Length -gt 0 ) {
+    Write-Host "`n`n`nThe following errors were detected:`n`n`n" -ForegroundColor White
     
     if ($AllMessages.Length -gt 0) {
-        write-host $AllMessages
+        write-host "The following scene/SDC files were not found:" -ForegroundColor White
+        write-host $AllMessages -ForegroundColor Red
     }
-    else {
-        
+    else {        
         write-host "No Scene errors found" -ForegroundColor Green
     }
-    if ($notfound.Length -gt 0) {
-        write-host $notfound 
+
+    if ($missingAssets.Length -gt 0) {
+        write-host "The following asset objects are missing:" -ForegroundColor White
+        write-host $missingAssets -ForegroundColor Red
     }
     else {
-        write-host "No game object errors found." -ForegroundColor Green
+        write-host "No missing asset objects." -ForegroundColor Green
     }
 
+
     if ($objectFolderNotFound.Length -gt 0) {
-        write-host $objectFolderNotFound
+        write-host "The following Object folders were not found:" -ForegroundColor White
+        write-host $objectFolderNotFound -ForegroundColor Red
     }
     else {
         write-host "All game object folders found." -ForegroundColor Green
     }
 
+    if ($notfound.Length -gt 0) {
+        write-host "The following mini-game objects are missing:" -ForegroundColor White
+        write-host $notfound -ForegroundColor Red
+    }
+    else {
+        write-host "No mini-game object missing." -ForegroundColor Green
+    }
 }
 
-
-<#
-write-host "clothing $($clothing.count)"
-write-host "entitlements $($entitlements.count)"
-write-host "mini_games $($mini_games.count)"
-#>
+if ($Print_Found_Assets) {
+    write-host "`n `n `nThe following objects were found: " -ForegroundColor White
+    write-host $foundStuff -ForegroundColor Green
+}
