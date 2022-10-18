@@ -169,12 +169,14 @@ foreach ($base_scene in $base_home.SCENELIST.scene) {
                     }   
                 
                 
-                    if ($path -inotlike "*build/environments*") {
+                    if ($path -inotlike "*build/*") {
                         $path = $path -replace ("file://resource_root/", "$($root_folder)/")
                     }             
 
                     $path = $path -replace ("file:///", "file://")
+                    Write-Verbose $path 
                     $path = $path -Replace ("file://resource_root/build/", "$($root_folder)/") 
+                    write-verbose $path 
                         
                     if (-not(Test-Path -Path $path)) {
                     
