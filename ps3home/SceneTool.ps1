@@ -4,7 +4,7 @@ param
     # Root folder for your USRDIR path    
     [Parameter(Mandatory)][string]$root_folder, 
     # Location of your main LOCALSCENELIST.XML file (or equivalent)
-    [Parameter(Mandatory)][string]$SceneListFilePath,
+    [Parameter()][string]$SceneListFilePath = '',
     [Parameter()][switch]$Print_Found_Assets
 
 )
@@ -16,6 +16,15 @@ $Crawl_Scene_Assets = $true #crawls each of the asset items in the .SCENE file
 $Check_Game_Objects = $true #crawls for each of the **linked** minigames from the .SCENE file
 $Check_All_Objects = $false #crawls through ALL folders in the OBJECTS folder. Not sure this is really needed, since in theory objects not linked are never used anyway.
 
+
+if ($SceneListFilePath -eq '') {
+    $SceneListFilePath = "$($root_folder)\ENVIRONMENTS\LocalSceneList.xml"
+}
+
+if (-not (Test-Path $SceneListFilePath)){
+    Write-Host "`nSceneList.xml file not found at $($root_folder)\ENVIRONMENTS ! Please verify the file is present`n" -ForegroundColor Red
+    exit
+}
 
 #[xml]$base_home = get-content C:\Users\iamma\source\repos\PS3\ps3home\LOCALSCENELIST_BASIC.XML
 #base variables
