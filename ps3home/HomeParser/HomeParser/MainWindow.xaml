@@ -5,12 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HomeParser"
         mc:Ignorable="d"
-        Title="Home Parser" Height="326" Width="1000">
-    <Grid>
-        <TextBox x:Name="txtResults" IsReadOnly="True" HorizontalAlignment="Left" Height="234" Margin="10,51,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="972"/>
+        Title="Home Parser" Height="361.786" Width="990" WindowStyle="ThreeDBorderWindow">
+    <Grid Grid.IsSharedSizeScope="True">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <TextBox x:Name="txtResults" IsReadOnly="True" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="300" Width="900" Margin="10,50,0,0" TextWrapping="Wrap" Text="" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" ScrollViewer.CanContentScroll="True" Grid.Row="1" Grid.ColumnSpan="2" />
         <Label Content="Root Folder Path" HorizontalAlignment="Left" Margin="10,11,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtPath" HorizontalAlignment="Left" Height="24" Margin="113,12,0,0" TextWrapping="Wrap" Text="C:\bin\homeclient\Playstation_Home_v0.97_Demo_002\HOME00097\USRDIR" VerticalAlignment="Top" Width="772"/>
-        <Button x:Name="btnQuery" Content="Query" HorizontalAlignment="Left" Margin="907,14,0,0" VerticalAlignment="Top" Width="75"/>
+        <TextBox x:Name="txtPath" HorizontalAlignment="Left" Height="24" Margin="113,12,0,0" TextWrapping="Wrap" Text="C:\bin\homeclient\Playstation_Home_v0.97_Demo_002\HOME00097\USRDIR" VerticalAlignment="Top" Width="754"/>
+        <Button x:Name="btnQuery" Content="Query" HorizontalAlignment="Left" Margin="888,14,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="9.87,0.314"/>
+        <ProgressBar HorizontalAlignment="Left" Height="21" Margin="10,24,0,0" Grid.Row="1" VerticalAlignment="Top" Width="962" Grid.ColumnSpan="2"/>
 
     </Grid>
 </Window>

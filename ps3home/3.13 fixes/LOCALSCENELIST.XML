@@ -1,0 +1,560 @@
+<SCENELIST>
+<SCENE Name="921 Acacia Drive" Type="Home" HOMEUID="0" SceneID="0512" config="apartments/nursery/nursery_apartment/AcaciaDrive.scene"/>
+<SCENE Name="Abbey Hill Cottage" Type="PublicLobby" HOMEUID="0" SceneID="0492" config="environments/cottage_apartment/AbbeyHill.scene"/>
+<SCENE Name="Abbey Hill Cottage Winter" Type="PublicLobby" HOMEUID="0" SceneID="0493" config="environments/Winter_cottage_apartment/AbbeyHillWinter.scene"/>
+<SCENE Name="Acorn Meadows Park Apartment" Type="Home" HOMEUID="0" SceneID="0001" config="environments/veemeepark/acorn_meadows_apartment.scene"/>
+<SCENE Name="Acorn Meadows Park Apartment Ni" Type="Home" HOMEUID="0" SceneID="0482" config="environments/veemeepark/acornparkaptnight.scene"/>
+<SCENE Name="Acorn Meadows Park Apartment Bi" Type="Home" HOMEUID="0" SceneID="0483" config="environments/veemeepark/acornparkaptbday.scene"/>
+<SCENE Name="Acorn Meadows Park Apartment Wi" Type="Home" HOMEUID="0" SceneID="0497" config="environments/veemeepark/acornparkaptwinter.scene"/>
+<SCENE Name="Acorn Meadows Park 4th Of July" Type="PublicLobby"  HOMEUID="0" SceneID="0002" config="environments/veemeepark/july.scene"/>
+<SCENE Name="Acorn Meadows Park Halloween Ed" Type="PublicLobby"  HOMEUID="0" SceneID="0003" config="environments/veemeepark/Ween.scene"/>
+<SCENE Name="Acorn Meadows Park St Patrick" Type="PublicLobby"  HOMEUID="0" SceneID="0502" config="environments/veemeepark/AcornParkPatrick.scene"/>
+<SCENE Name="Acorn Meadows Park Summer" Type="PublicLobby"  HOMEUID="0" SceneID="0490" config="environments/veemeepark/AcornParkSummer.scene"/>
+<SCENE Name="Acorn Meadows Park Thanksgiving" Type="PublicLobby"  HOMEUID="0" SceneID="0491" config="environments/veemeepark/AcornParkThanksgiving.scene"/>
+<SCENE Name="Acorn Meadows Park VEEMEE" Type="PublicLobby"  HOMEUID="0" SceneID="0004" config="environments/veemeepark/veemee.scene"/>
+<SCENE Name="Acorn Meadows Park Winter" Type="PublicLobby"  HOMEUID="0" SceneID="0487" config="environments/veemeepark/AcornParkWinter.scene"/>
+<SCENE Name="Action Forces Sample DEV Scene" Type="PublicLobby"  HOMEUID="0" SceneID="0005" config="Environments/MiniGameTutorial/ActionForces.scene" />
+<SCENE Name="Ajagara's Peak" Type="Home"  HOMEUID="0" SceneID="0510" config="Apartments/stand_alone/mountain_top/AjagarasPeakApt.scene" />
+<SCENE Name="Ansada Fone Apartment Day" Type="Home" HOMEUID="0" SceneID="0479" config="environments/ansadafone_apt_97ba_6bd6_redesign/AnsadaFoneAptDay.scene"/>
+<SCENE Name="Ansada Fone Apartment Night" Type="Home" HOMEUID="0" SceneID="0006" config="environments/ansadafone_apt_97ba_6bd6_redesign/AnsadaFoneApt.scene"/>
+<SCENE Name="Andy's Room" Type="Home" HOMEUID="0" SceneID="0007" config="Environments/andys_room/andy.scene" />
+<SCENE Name="Anime Apartment" Type="Home" HOMEUID="0" SceneID="0008" config="environments/luxuryapt/anime/anime.scene"/>
+<SCENE Name="Arcade Tutorial DEV Scene" Type="PublicLobby"  HOMEUID="0" SceneID="0009" config="Environments/ArcadeTutorial/ArcadeTutorial.scene" />
+<SCENE Name="Assassin's Creed II Apartment" Type="Home" HOMEUID="0" SceneID="00010" config="Environments/ac2_apartment/CreedApt.scene" />
+<SCENE Name="Assassin’s Creed Abstergo Ani" Type="PublicLobby"  HOMEUID="0" SceneID="0011" config="Environments/ac2_animus/lab.scene" />
+<SCENE Name="Assassin's Hideout" Type="PublicLobby"  HOMEUID="0" SceneID="0012" config="Environments/ac2_hideout/Ac2_hideout.scene" />
+<SCENE Name="Atom Republic Park" Type="Home"  HOMEUID="0" SceneID="0488" config="Environments/chilloutpark/Atompark.scene" />
+<SCENE Name="Audi Alpine Lodge" Type="PublicLobby"  HOMEUID="0" SceneID="0013" config="Environments/audisled/AudiSled.scene" />
+<SCENE Name="Audi Concert Hall" Type="PublicLobby"  HOMEUID="0" SceneID="0014" config="environments/audiconcerthall/AudiConcertHall_Scene.scene"/>
+<SCENE Name="Audi Home Terminal Old Version" Type="PublicLobby"  HOMEUID="0" SceneID="0015" config="environments/audihubold/audihubold.scene"/>
+<SCENE Name="Audi Home Terminal" Type="PublicLobby"  HOMEUID="0" SceneID="0016" config="environments/AudiHub/audihub.scene"/>
+<SCENE Name="Audi Iron Man" Type="PublicLobby"  HOMEUID="0" SceneID="0017" config="environments/audiironman/audiironman.scene"/>
+<SCENE Name="Audi Connect Apartment" Type="Home" HOMEUID="0" SceneID="0018" config="environments/audiconnect/AudiConnect_Apartment.scene"/>
+<SCENE Name="Audi Technology Apartment" Type="Home" HOMEUID="0" SceneID="0019" config="Environments/audiapt/AudiApt.scene" />
+<SCENE Name="Audi Vertical Run" Type="PublicLobby"  HOMEUID="0" SceneID="0020" config="environments/Audivrun/AudiVRun.scene"/>
+<SCENE Name="Aurora Island Apartment" Type="Home" HOMEUID="0" SceneID="0021" config="environments/auroraapartment/auroraApartment.scene"/>
+<SCENE Name="Aurora Trophy Showcase" Type="Home" HOMEUID="0" SceneID="0022" config="environments/trophyapartment_001/Trophy.scene"/>
+<SCENE Name="Aurora 1.3" Type="PublicLobby" HOMEUID="0" SceneID="0451" config="Environments/landsharkisland/auroraold.scene" />
+<SCENE Name="Aurora 1.8" Type="PublicLobby"  HOMEUID="0" SceneID="0023" config="Environments/landsharkisland/aurora.scene" />
+<SCENE Name="Aurora 1.9" Type="PublicLobby"  HOMEUID="0" SceneID="0024" config="environments/landsharkisland/auroraNEW.scene"/>
+<SCENE Name="Baked Lighting Sample DEV Scene" Type="PublicLobby"  HOMEUID="0" SceneID="0025" config="Environments/bakedlightingsample/Lom_InterestPoints.scene" />
+<SCENE Name="BasicApartment" SceneID="88c92afa-dc36-5eed-bccd-d7fa5bdea71f" Type="Home" HOMEUID="0" Group="Apartments" KEYWORDS="Home" config="Environments/Home_internal_SCEA/Personal_Spaces/Basic_Apartment/Basic_Apartment1.scene" />
+<SCENE Name="Basic Clubhouse" Type="Home" HOMEUID="0" SceneID="0026" config="Environments/Home_internal_SCEE/Home_Lobbies/Club_Houses/Club_House_V1/clubhouse.scene"/>
+<SCENE Name="Batman: Arkham Asylum Batcave" Type="Home" HOMEUID="0" SceneID="0027" config="Environments/batcave/Batman.scene" />
+<SCENE Name="Beach Apartment" Type="Home" HOMEUID="0" SceneID="00" config="environments/beachapt/beachApt.scene"/>
+<SCENE Name="Blend Shader Sample DEV Scene" SceneID="" version="0" Type="PublicLobby" Group="Home" KEYWORDS="Home" config="Environments/blendshader/BlendShaderScene.scene" />
+<SCENE Name="Bioshock Rapture Retro Apartmen" Type="Home" HOMEUID="0" SceneID="0028" config="environments/bioshock_apartment/bioshock_apartment.scene"/>
+<SCENE Name="Blasters Bay" Type="Home" HOMEUID="0" SceneID="0029" config="Environments/sodium_apartment/sodium_apartment.scene" />
+<SCENE Name="Bonks Adventure Style Living" Type="Home" HOMEUID="0" SceneID="0529" config="Environments/bonk_house/BonksAdventureSpace.scene" />
+<SCENE Name="Bootleggers ’29" Type="PublicLobby"  HOMEUID="0" SceneID="0030" config="environments/bootlegger/boot29.scene"/>
+<SCENE Name="Bowling Apartment" Type="Home"  HOMEUID="0" SceneID="0480" config="environments/bowl_apartment/bowlingapt.scene"/>
+<SCENE Name="Bramblenook Farm" Type="PublicLobby"  HOMEUID="0" SceneID="0031" config="environments/farm_bramblenook/FARM_Bramblenook.scene"/>
+<SCENE Name="Burn Zombie Burn" Type="PublicLobby"  HOMEUID="0" SceneID="0032" config="environments/d6_test/BZB.scene"/>
+<SCENE Name="Buzz HQ Home Lobby" Type="PublicLobby"  HOMEUID="0" SceneID="0033" config="buzz_home_lobby/buzz.scene" />
+<SCENE Name="Buzz! Quiz Game Space" Type="PublicLobby"  HOMEUID="0" SceneID="0034" config="buzz_home_set/buzz.scene" />
+<SCENE Name="Cafe Yuma" Type="Home"  HOMEUID="0" SceneID="0470" config="LG_Sentai/a_jp_00/map/scenes/Sentai.scene"/>
+<SCENE Name="Capcom Sky Lounge: Event Square" Type="PublicLobby"  HOMEUID="0" SceneID="0463" config="environments/capcom_lounge_eventhall/capcomeventhall.scene"/>
+<SCENE Name="Capcom Sky Lounge: Floor 1" Type="PublicLobby"  HOMEUID="0" SceneID="0473" config="environments/capcom_lounge_infomation/capcomloungeinfo.scene"/>
+<SCENE Name="Capcom Sky Lounge: Floor 2" Type="PublicLobby"  HOMEUID="0" SceneID="0474" config="environments/capcom_lounge_shop/capcomshop.scene"/>
+<SCENE Name="Capcom Sky Lounge: PS3 Theater" Type="PublicLobby"  HOMEUID="0" SceneID="0455" config="environments/CAPCOM_LOUNGE_NEW_THEATERPS3/CAPCOMTHEATREPS3.scene"/>
+<SCENE Name="Capcom Sky Lounge: PSP Theater" Type="PublicLobby"  HOMEUID="0" SceneID="0464" config="environments/CAPCOM_LOUNGE_NEW_THEATERPSP/CAPCOMPSPTHEATER.scene"/>
+<SCENE Name="Capcom Sky Lounge: Sky Deck" Type="PublicLobby"  HOMEUID="0" SceneID="0035" config="environments/capcom_lounge_airshiptop/CapcomLoungeJP.scene"/>
+<SCENE Name="Carlas Coffee Shop Apartment" Type="Home" HOMEUID="0" SceneID="0456" config="environments/coffeeshop/coffeeshop.scene"/>
+<SCENE Name="Cassie's Dance Studio Apartment" Type="Home" HOMEUID="0" SceneID="0036" config="environments/dance_studio/dance.scene"/>
+<SCENE Name="Castle Durrant" Type="Home" HOMEUID="0" SceneID="0540" config="environments/Castle/CastleDurrant.scene"/>
+<SCENE Name="Castle Greywold Clubhouse" Type="Home" HOMEUID="0" SceneID="0527" config="environments/Castlegreywold/CastleGreywoldclub.scene"/>
+<SCENE Name="Chamber Apartment" Type="Home" HOMEUID="0" SceneID="0037" config="environments/chamber/chamber.scene"/>
+<SCENE Name="City by the Bay Loft Window to" Type="Home" HOMEUID="0" SceneID="0535" config="lg_world_sanfrancisco2/a_jp_00/map/scenes/SanFranciscoApt.scene" />
+<SCENE Name="City of Flowers Penthouse Windo" Type="Home" HOMEUID="0" SceneID="0038" config="lg_world_paris/a_jp_00/map/scenes/GZParisApt.scene" />
+<SCENE Name="Clearasil Kart Racing" Type="PublicLobby"  HOMEUID="0" SceneID="0039" config="environments/clear_confidencecoaster/kart.scene"/>
+<SCENE Name="Clearasil Ultra Fast Back To Sc" Type="PublicLobby"  HOMEUID="0" SceneID="0040" config="environments/scenes/school/School.scene"/>
+<SCENE Name="Cloth Sample DEV Scene" Type="PublicLobby"  HOMEUID="0" SceneID="0041" config="Environments/clothsample/ClothSampleScene.scene" />
+<SCENE Name="Cosmic Corner Fun Sized Apartme" Type="Home" HOMEUID="0" SceneID="0042" config="environments/streetcornerinspace/corner.scene"/>
+<SCENE Name="Cogs Sky Platform" Type="PublicLobby"  HOMEUID="0" SceneID="0043" config="codename/cogs_demo/environments/platforms_inthesky_withdiamonds/COGS.scene" />
+<SCENE Name="Collision User ID Sample DEV Sc" Type="PublicLobby"  HOMEUID="0" SceneID="0044" config="Environments/collisionuserid/CollisionUserID.scene" />
+<SCENE Name="Conspiracy" Type="PublicLobby"  HOMEUID="0" SceneID="0045" config="environments/volcanobasestub/v.scene"/>
+<SCENE Name="Conspiracy Raid" Type="PublicLobby"  HOMEUID="0" SceneID="0046" config="environments/whitebox/whitebox.scene"/>
+<SCENE Name="Creek Falls" Type="Home"  HOMEUID="0" SceneID="0514" config="environments/2011/per/per_fallingwater/creekfalls.scene"/>
+<SCENE Name="Crystal Seashores Open House" Type="PublicLobby"  HOMEUID="0" SceneID="0047" config="environments/2011/pub/pub_mediterranean_house/pub_mediterranean_house.scene" />
+<SCENE Name="Cutteridge Estate Personal Spac" Type="Home" HOMEUID="0" SceneID="0048" config="environments/cutteridge_mansion/Cut.scene"/>
+<SCENE Name="Cutthroats: Battle for Black Po" Type="PublicLobby"  HOMEUID="0" SceneID="0049" config="environments/2011/pub/pub_pirates/lake/scene/cove.scene"/>
+<SCENE Name="DISGAEA 3 Mao's Room" Type="PublicLobby"  HOMEUID="0" SceneID="0050" config="Environments/nis_overlord_castle/dis3.scene" />
+<SCENE Name="DUST 514 The Event Horizon Loun" Type="PublicLobby"  HOMEUID="0" SceneID="0051" config="environments/dust/war_room/War_Room.scene"/>
+<SCENE Name="Day Night Cycle Sample DEV Scen" Type="PublicLobby"  HOMEUID="0" SceneID="0052" config="Environments/daynightcyclesample/DayNightCycle.scene" />
+<SCENE Name="Dead Nation Safe House" Type="PublicLobby"  HOMEUID="0" SceneID="0053" config="Environments/dead_nation_space_3b90_53bb/DEAD.scene" />
+<SCENE Name="Def Jam Rapstar Studio" Type="Home" HOMEUID="0" SceneID="0054" config="environments/defjamsoundstudio/DefJamSound.scene"/>
+<SCENE Name="Demonic Cutteridge Mansion" Type="Home" HOMEUID="0" SceneID="0055" config="environments/cutteridge_mansion_demonic/cutteridge_Manner_demonic.scene"/>
+<SCENE Name="Desert Haven Clubhouse" Type="Home" HOMEUID="0" SceneID="0056" KEYWORDS="Home" config="environments/2011/club/club_palmresort/Desert.scene" />
+<SCENE Name="Dev blue room" Type="PublicLobby"  HOMEUID="0" SceneID="0057" config="game/additionalincidentals/bgbuildings/xicity.scene" />
+<SCENE Name="Diamond Beach Mansion" Type="Home" HOMEUID="0" SceneID="0058" config="Environments/beachmansion/BeachMansion.scene" />
+<SCENE Name="Diamond Beach Yacht Club &amp; Mari" Type="PublicLobby"  HOMEUID="0" SceneID="0059" config="games/common/environments/public_beach/public_beach.scene"/>
+<SCENE Name="Diamond Beach Yacht Openhouse" Type="PublicLobby"  HOMEUID="0" SceneID="0060" config="games/common/environments/mbm_yacht/yachtopen.scene"/>
+<SCENE Name="Diesel Island" Type="PublicLobby"  HOMEUID="0" SceneID="0061" config="environments/dieselislandpublic/DieselIslandPublic.scene"/>
+<SCENE Name="Diesel Museum" Type="PublicLobby"  HOMEUID="0" SceneID="0062" config="environments/DieselSS12/DieselMuseum.scene" />
+<SCENE Name="Discotheque" Type="Home"  HOMEUID="0" SceneID="0462" config="environments/discotheque/disco.scene" />
+<SCENE Name="Disgaea 4 Lounge" Type="PublicLobby"  HOMEUID="0" SceneID="0063" config="Environments/nis_hells_prison/dis4.scene" />
+<SCENE Name="Doctor Who Tardis" Type="Home" HOMEUID="0" SceneID="0064" config="environments/doctorwho_tardis/DRWHO.scene"/>
+<SCENE Name="Dojo" Type="Home"  HOMEUID="0" SceneID="0459" config="environments/fishing_lounge/fishinglounge.scene" />
+<SCENE Name="Dragon's Green" Type="PublicLobby"  HOMEUID="0" SceneID="0065" config="environments/Arcade_Hub/Arcade_Hub.scene"/>
+<SCENE Name="Dream Adventure" Type="Home"  HOMEUID="0" SceneID="0513" config="apartments/island_developement/sail_yacht/yacht_1/DreamAdventure.scene"/>
+<SCENE Name="Dream Forest Paradise" Type="Home"  HOMEUID="0" SceneID="0499" config="environments/treehouse_apartment/dreamforestparadise.scene"/>
+<SCENE Name="Dream Forest Paradise Club" Type="Home"  HOMEUID="0" SceneID="0500" config="environments/treehouse_apartment/dreamforestparadiseclub.scene"/>
+<SCENE Name="Dream Hideway" Type="Home" HOMEUID="0" SceneID="0066" config="apartments/stand_alone/jungle_apartment/jungle.scene"/>
+<SCENE Name="Drop Science Subway" Type="Home" HOMEUID="0" SceneID="0067" config="environments/subway_apartment/subway.scene"/>
+<SCENE Name="Dynamic Lighting Sample DEV Sce" Type="PublicLobby"  HOMEUID="0" SceneID="0068" config="Environments/MiniGameTutorial/DynamicLightingSample.scene" />
+<SCENE Name="E3®2011" Type="PublicLobby"  HOMEUID="0" SceneID="0069" config="environments/e3_booth/E32011.scene"/>
+<SCENE Name="E3®2012 Theatre" Type="PublicLobby"  HOMEUID="0" SceneID="0070" config="environments/the_venue/E32012Movie.scene"/>
+<SCENE Name="E3®2012" Type="PublicLobby"  HOMEUID="0" SceneID="0071" config="environments/e3_booth_2012/E32012.scene"/>
+<SCENE Name="E3®2013" Type="PublicLobby"  HOMEUID="0" SceneID="0072" config="environments/e3_booth_2013/E3Booth2013.scene"/>
+<SCENE Name="EA Sports Complex First Floor" Type="PublicLobby"  HOMEUID="0" SceneID="0073" config="environments/easc/EA.scene" />
+<SCENE Name="EA Sports Complex Second Floor" Type="PublicLobby"  HOMEUID="0" SceneID="0074" config="environments/easc/EAGOLF.scene" />
+<SCENE Name="EA Sports Racing Complex First" Type="PublicLobby"  HOMEUID="0" SceneID="0075" config="environments/easc/EASC_Racing.scene" />
+<SCENE Name="EA Sports Racing Complex Second" Type="PublicLobby"  HOMEUID="0" SceneID="0076" config="environments/easc/EARace.scene" />
+<SCENE Name="Eden: Primarch's Vigilarium" Type="Home" HOMEUID="0" SceneID="0077" config="environments/home_eden/scenes/home_eden_room.scene"/>
+<SCENE Name="Edo Tenement House Personal Spa" Type="Home" HOMEUID="0" SceneID="0078" config="edo/a_jp_00/map/scenes/edoApt.scene" />
+<SCENE Name="Elemental Monster's Lounge" Type="PublicLobby"  HOMEUID="0" SceneID="0079" config="environments/EM_room/EM_Room.scene"/>
+<SCENE Name="Engine Settings Sample DEV Scen" Type="PublicLobby"  HOMEUID="0" SceneID="0080" config="Environments/MiniGameTutorial/EngineSettingsSample.scene" />
+<SCENE Name="Entity Animation Blending DEV" Type="PublicLobby"  HOMEUID="0" SceneID="0081" config="Environments/MiniGameTutorial/EntityAnimationBlending.scene" />
+<SCENE Name="F.U.B.A.R. Apartment" Type="Home" HOMEUID="0" SceneID="0082" config="environments/managerbackground/FUBAR.scene"/>
+<SCENE Name="FPS Sample DEV Scene" Type="PublicLobby"  HOMEUID="0" SceneID="0083" config="Environments/htsspaces/htscargohold/HTS_CargoHold_FpsSample.scene" />
+<SCENE Name="Far Cry 2: Reuben’s Office" Type="PublicLobby"  HOMEUID="0" SceneID="0084" config="environments/FarCry2_ReubensRoom/farcryoffice.scene"/>
+<SCENE Name="Far Cry 2: Train Station" Type="PublicLobby"  HOMEUID="0" SceneID="0085" config="environments/farcry_trainstation_b/FarCry2Train.scene"/>
+<SCENE Name="Feva Arena Entrance" Type="PublicLobby"  HOMEUID="0" SceneID="0086" config="environments/fifa_comarea/FevaArena1.scene"/>
+<SCENE Name="Feva Arena" Type="PublicLobby"  HOMEUID="0" SceneID="0087" config="environments/fifa_pitch/Feva.scene"/>
+<SCENE Name="Fight Night Round 4 EA Sports" Type="PublicLobby"  HOMEUID="0" SceneID="0088" config="environments/fightnight/FightNight.scene"/>
+<SCENE Name="Firing Range Future" Type="PublicLobby"  HOMEUID="0" SceneID="0089" config="environments/SkunkWorks_Future_B206_3EBE/SkunkworksFuture.scene" />
+<SCENE Name="Firing Range Past" Type="PublicLobby"  HOMEUID="0" SceneID="0090" config="environments/SkunkWorks_Past_B99C_B08F/SkunkworksPast.scene" />
+<SCENE Name="Firing Range Present" Type="PublicLobby"  HOMEUID="0" SceneID="0091" config="environments/nsirchome_skunkworks_143c_baef/RACskunkworks.scene" />
+<SCENE Name="Fort Bellamy" Type="PublicLobby" HOMEUID="0" SceneID="0511" config="apartments/island_developement/sail_yacht/islands/fortbellamy.scene"/>
+<SCENE Name="Fossil Museum" Type="Home" HOMEUID="0" SceneID="0092" config="lounge_base/a_jp_00/map/scenes/PersonalMap.scene"/>
+<SCENE Name="French Chateau Apartment" Type="Home" HOMEUID="0" SceneID="0093" config="Environments/2011/per/per_frenchchateau/FrenchChateauApt.scene" />
+<SCENE Name="French Chateau Open House" Type="PublicLobby"  HOMEUID="0" SceneID="0094" config="Environments/2011/PUB/pub_frenchchateau/Pub_FrenchChateau.scene" />
+<SCENE Name="Frozen Peak Palace" Type="Home"  HOMEUID="0" SceneID="0507" config="Environments/2011/per/per_icepalace/FrozenPeakPalace.scene" />
+<SCENE Name="Game Moonbase" Type="PublicLobby"  HOMEUID="0" SceneID="0095" config="environments/game_moonbase_244e_aa34/Moonbase.scene"/>
+<SCENE Name="GamesCom 2009" Type="PublicLobby"  HOMEUID="0" SceneID="0096" config="environments/gamescom_2009_Podium/Gamescom.scene"/>
+<SCENE Name="GamesCom 2012" Type="PublicLobby"  HOMEUID="0" SceneID="0097" config="environments/gamescom_event_space_4c0f_bda2/Gamescom2012.scene"/>
+<SCENE Name="Gamescom 2013" Type="PublicLobby"  HOMEUID="0" SceneID="0098" config="gamescom/environments/scenes/Gamescom2013.scene"/>
+<SCENE Name="GDC 2007 Games Room" Type="PublicLobby"  HOMEUID="0" SceneID="0099" config="environments/games_room/Games_Room.scene"/>
+<SCENE Name="GDC 2007 Harbour Studio" Type="Home" HOMEUID="0" SceneID="0100" config="environments/personal_space/Personal_Space.scene" />
+<SCENE Name="GDC 2007 The Hub" Type="PublicLobby"  HOMEUID="0" SceneID="0101" config="environments/the_hub/The_Hub.scene"/>
+<SCENE Name="Ghostbusters Firehouse On Locat" Type="Home" HOMEUID="0" SceneID="0102" config="environments/Ghostbusters_Apartment/Ghostbusters_Apartment.scene"/>
+<SCENE Name="Glittering Sands Beac" Type="PublicLobby"  HOMEUID="0" SceneID="0107" config="lg_seaside/GZBeach.scene"/>
+<SCENE Name="Glittering Sands Secluded" Type="Home"  HOMEUID="0" SceneID="0526" config="lg_seaside/a_jp_00/map/scenes/GlitteringSandsApt.scene"/>
+<SCENE Name="Glittering Sands TANA" Type="PublicLobby"  HOMEUID="0" SceneID="0108" config="lg_seaside/a_jp_00/map/scenes/lg_seaside_map_G000_eu07.scene"/>
+<SCENE Name="Gnome Curling Secret Garden" Type="Home" HOMEUID="0" SceneID="0103" config="environments/Gnome_GardenApt/Gnome_GardenApt.scene"/>
+<SCENE Name="Go Fish Tropical Island" Type="Home" HOMEUID="0" SceneID="0104" config="environments/gofish_beachapt/gofish_beachapt.scene"/>
+<SCENE Name="Gothic Cathedral" Type="Home" HOMEUID="0" SceneID="0105" config="environments/gothic_house/gothic.scene"/>
+<SCENE Name="Gothic Manor" Type="Home" HOMEUID="0" SceneID="0476" config="environments/2011/per/per_gothic/per_gothic.scene"/>
+<SCENE Name="Gravity Crash Space" Type="PublicLobby"  HOMEUID="0" SceneID="0113" config="Environments/gravity_crash_maze_7fa3_7bf8/gravity.scene" />
+<SCENE Name="Great Edo Of Nippon" Type="PublicLobby"  HOMEUID="0" SceneID="0109" config="edo/a_jp_00/map/scenes/edoGZ.scene"/>
+<SCENE Name="Great Edo of Nippon - Monoke Bo" Type="PublicLobby"  HOMEUID="0" SceneID="0114" config="edo/a_jp_00/map/scenes/GZBon.scene"/>
+<SCENE Name="Great Edo Of Nippon U" Type="PublicLobby"  HOMEUID="0" SceneID="0110" config="edo_Sub01/a_jp_00/map/scenes/edoRace.scene"/>
+<SCENE Name="Guitar Hero Backstage" Type="PublicLobby"  HOMEUID="0" SceneID="0115" config="environments/gh_backstage/GuitarHero.scene"/>
+<SCENE Name="Guitar Hero VIP Lounge" Type="PublicLobby"  HOMEUID="0" SceneID="0116" config="environments/guitar_hero_vip/guitarVIP.scene"/>
+<SCENE Name="Gymnasium DEV Scene" Type="PublicLobby"  HOMEUID="0" SceneID="0117" config="Environments/testroom/testroom.scene" />
+<SCENE Name="GZ Burger" Type="Home" HOMEUID="0" SceneID="0118" config="lg_gzburger/a_jp_00/map/scenes/GZburger.scene"/>
+<SCENE Name="Hankagai Apartment" Type="Home" HOMEUID="0" SceneID="0468" config="Hankagai/a_jp_00/map/scenes/Hankagaiapt.scene"/>
+<SCENE Name="Hankagai Lounge Neon" Type="PublicLobby"  HOMEUID="0" SceneID="0106" config="hankagai/Hankagai.scene"/>
+<SCENE Name="Harry Potter: Pottermore Diagon" Type="PublicLobby"  HOMEUID="0" SceneID="0120" config="Environments/diagon_alley/Alley.scene" />
+<SCENE Name="Harry Potter: Pottermore Forbid" Type="PublicLobby"  HOMEUID="0" SceneID="0119" config="environments/broomstick_racing/PottermoreForbidden.scene"/>
+<SCENE Name="Harry Potter: Pottermore Gryffi" Type="PublicLobby"  HOMEUID="0" SceneID="0475" config="environments/GRYFFINDOR_COMMON_ROOM/Gryffindorcommon.scene"/>
+<SCENE Name="Harry Potter: Pottermore Hogsme" Type="Home"  HOMEUID="0" SceneID="0454" config="Environments/hogsmeade_house/hogsmeadehouse.scene" />
+<SCENE Name="Harry Potter: Pottermore Raven" Type="PublicLobby"  HOMEUID="0" SceneID="0121" config="Environments/ravenclaw_common_room/ravenclaw.scene" />
+<SCENE Name="Harry Potter: Pottermore The Gr" Type="PublicLobby"  HOMEUID="0" SceneID="0122" config="environments/greathall/GreatHall.scene"/>
+<SCENE Name="Harry Potter: Pottermore Wizard" Type="PublicLobby"  HOMEUID="0" SceneID="0123" config="environments/wizard_chess/Wizardchess.scene" />
+<SCENE Name="Heavy Water Lounge" Type="PublicLobby"  HOMEUID="0" SceneID="0124" config="environments/scenes/water.scene"/>
+<SCENE Name="Hed Kandi Beach Event Space" Type="PublicLobby"  HOMEUID="0" SceneID="0125" config="environments/headkandi/HedKandiBeach.scene"/>
+<SCENE Name="Hed Kandi Music Unlimited" Type="PublicLobby"  HOMEUID="0" SceneID="0126" config="environments/headkandi/hedkandi.scene"/>
+<SCENE Name="Hillside Open House" Type="PublicLobby"  HOMEUID="0" SceneID="0127" config="environments/2011/pub/pub_hillsidehouse/hillsidepub.scene"/>
+<SCENE Name="Home Grown Laboratory" Type="PublicLobby"  HOMEUID="0" SceneID="0128" config="environments/hgl_factory/HGH.scene"/>
+<SCENE Name="Home Sports Day" Type="Home" HOMEUID="0" SceneID="0129" config="environments/olympictrack_100metres/olympicpark.scene"/>
+<SCENE Name="Home Tycoon: New Heights Train" Type="PublicLobby"  HOMEUID="0" SceneID="0130" config="environments/trainstation/home.scene"/>
+<SCENE Name="Hot Shots Golf Lounge" Type="PublicLobby"  HOMEUID="0" SceneID="0131" config="environments/MG_Lounge/golf.scene"/>
+<SCENE Name="HTS Aeronautilus DEV Scene" Type="PublicLobby"  HOMEUID="0" SceneID="0132" config="Environments/hts_spaces/hts_airship/hts_airship.scene" />
+<SCENE Name="HTS Electrical Space DEV Scene" Type="PublicLobby"  HOMEUID="0" SceneID="0133" config="Environments/htsspaces/htselectricalspace/HTS_Electricity.scene" />
+<SCENE Name="Hudson Bomber Dome" Type="PublicLobby"  HOMEUID="0" SceneID="0134" config="environments/bomber_dome/HudsonDome.scene"/>
+<SCENE Name="Hudson Gate" Type="PublicLobby"  HOMEUID="0" SceneID="0135" config="environments/hudson_gate/hg.scene"/>
+<SCENE Name="Hudson Gate Dolphy Race" Type="PublicLobby"  HOMEUID="0" SceneID="0136" config="environments/dolphy_room/dolphy_room2.scene"/>
+<SCENE Name="Hudson Theater" Type="PublicLobby"  HOMEUID="0" SceneID="0137" config="environments/hudson_theater/HudsonMovie.scene"/>
+<SCENE Name="Infamous The Abandoned Docks Of" Type="PublicLobby"  HOMEUID="0" SceneID="0138" config="environments/infamous_docks/Infamous.scene"/>
+<SCENE Name="Inferno Apartment" Type="Home" HOMEUID="0" SceneID="0139" config="environments/VOLCANO/HOT.scene"/>
+<SCENE Name="Infinite Oasis Ranch Open House" Type="PublicLobby"  HOMEUID="0" SceneID="0140" config="environments/2011/pub/pub_modernranch/ranch.scene"/>
+<SCENE Name="Interactive Slideshow Sample DE" Type="PublicLobby"  HOMEUID="0" SceneID="0141" config="Environments/MiniGameTutorial/InteractiveSlideshowSample.scene" />
+<SCENE Name="IREM Gathering Place for Cave E" Type="PublicLobby"  HOMEUID="0" SceneID="0142" config="v8lounge/c_us_00/map/scenes/Cave.scene"/>
+<SCENE Name="Irem Market" Type="PublicLobby"  HOMEUID="0" SceneID="0143" config="irema8/IremMarket.scene"/>
+<SCENE Name="Irem SeaSide" Type="PublicLobby"  HOMEUID="0" SceneID="0144" config="environments/iremisland/iremisland.scene"/>
+<SCENE Name="Irem SeaSide New Year" Type="PublicLobby"  HOMEUID="0" SceneID="0145" config="iremisland/a_jp_01/map/scenes/iremnewyear.scene"/>
+<SCENE Name="Irem SeaSide New Year Night" Type="PublicLobby"  HOMEUID="0" SceneID="0146" config="iremisland/a_jp_01/map/scenes/iremnewyearnight.scene"/>
+<SCENE Name="IREM Square" Type="PublicLobby"  HOMEUID="0" SceneID="0147" config="iremlounge/D_eu_00/map/scenes/IREMsquare.scene" />
+<SCENE Name="Irish Pub" Type="Home" HOMEUID="0" SceneID="0148" config="environments/irishpubapt/IrishPub.scene" />
+<SCENE Name="Iron Fusion Vault Female" Type="Home" HOMEUID="0" SceneID="0520" config="apartments/iron_fusion/mechjet_pod/ironfusionvaultfemale.scene" />
+<SCENE Name="Iron Fusion Vault Male" Type="Home" HOMEUID="0" SceneID="0521" config="apartments/iron_fusion/mechjet_pod/ironfusionvaultmale.scene" />
+<SCENE Name="Island Bungalow Open House" Type="PublicLobby"  HOMEUID="0" SceneID="0149" config="environments/2011/pub/pub_islandbungalow/BungalowOpen.scene"/>
+<SCENE Name="Island Bungalow Clubhouse" Type="Home" HOMEUID="0" SceneID="0150" config="environments/2011/club/club_islandbungalow/Bungalow.scene"/>
+<SCENE Name="Japanese Apartment" Type="Home" HOMEUID="0" SceneID="0151" config="environments/home_internal_scee/personal_spaces/japanesehouse/JapaneseHouse.scene"/>
+<SCENE Name="Jetsetter Private Plane" Type="Home" HOMEUID="0" SceneID="0152" KEYWORDS="Home" config="environments/private_plane/plane.scene" />
+<SCENE Name="Joe's Boxing Gym Apartment" Type="Home" HOMEUID="0" SceneID="0153" config="environments/dance_studio/joe.scene"/>
+<SCENE Name="Keys to the VIP" Type="Home" HOMEUID="0" SceneID="0154" config="environments/hotelroom/hotelRoomFinal.scene"/>
+<SCENE Name="Kikai Machine Empire Secret" Type="Public"  HOMEUID="0" SceneID="0458" config="april2012/HIMITSUKICHI/a_jp_00/map/scenes/Himitsukichi2.scene"/>
+<SCENE Name="Kikai Machine Empire Secret 2" Type="PublicLobby"  HOMEUID="0" SceneID="0465" config="april2012/HIMITSUKICHI/a_jp_00/map/scenes/Himitsukichi4.scene"/>
+<SCENE Name="Kikai Machine Empire UFO Front" Type="PublicLobby"  HOMEUID="0" SceneID="0461" config="april2012/hikoubuttai/a_jp_00/map/scenes/Himitsukichi3.scene"/>
+<SCENE Name="Kikai Machine Empire UFO Rear" Type="PublicLobby"  HOMEUID="0" SceneID="0457" config="april2012/hikoubuttai/a_jp_00/map/scenes/Himitsukichi.scene"/>
+<SCENE Name="Kikai Machine Empire UFO Statio" Type="Home" HOMEUID="0" SceneID="0469" config="april2012/shinjyuku/a_jp_00/map/scenes/shinjyuku.scene"/>
+<SCENE Name="Killer Plants from Outer Space" Type="PublicLobby"  HOMEUID="0" SceneID="0155" config="environments/KillerPlantsFromOuterSpace/Killer.scene"/>
+<SCENE Name="Killzone 2 Visari Throne Room" Type="Home" HOMEUID="0" SceneID="0156" config="environments/hgh_appartment/KillZone.scene"/>
+<SCENE Name="Konami Club Luminosity" Type="PublicLobby"  HOMEUID="0" SceneID="0157" config="environments/neon_club/KonamiLumo.scene" />
+<SCENE Name="Konami Penthouse" Type="PublicLobby"  HOMEUID="0" SceneID="0158" config="environments/konami_space/Konami_Space.scene"/>
+<SCENE Name="Lakeside Log Cabin" Type="Home" HOMEUID="0" SceneID="0159" config="environments/home_internal_scee/personal_spaces/log_cabin/Lake.scene"/>
+<SCENE Name="Las Vegas Suite Personal Space" Type="Home" HOMEUID="0" SceneID="0160" config="environments/lasvegas_suite/vegas.scene"/>
+<SCENE Name="LeChuck's Pirate ship" Type="Home" HOMEUID="0" SceneID="0161" config="environments/ghost_ship/ghost_ship.scene"/>
+<SCENE Name="Little Big Planet Arabian Derby" Type="PublicLobby"  HOMEUID="0" SceneID="0162" config="environments/LBPHomeArabianDerby/LBParabia.scene"/>
+<SCENE Name="Little Big Planet Creator" Type="PublicLobby"  HOMEUID="0" SceneID="0163" config="environments/LBPHomeCreator/pod.scene" />
+<SCENE Name="Little Big Planet Playground" Type="PublicLobby"  HOMEUID="0" SceneID="0164" config="environments/lbphomehub/LBPHUB.scene" />
+<SCENE Name="Little Big Planet Pod Penthouse" Type="Home" HOMEUID="0" SceneID="0165" config="environments/lbphomeappartment/lbphomeappartment.scene"/>
+<SCENE Name="Little Big Planet Toyota Prius" Type="PublicLobby"  HOMEUID="0" SceneID="0166" config="environments/toyota/ToyotaLBP.scene"/>
+<SCENE Name="Lockwood Dream Central" Type="PublicLobby"  HOMEUID="0" SceneID="0167" config="apartments/island_developement/hub_1/dream.scene"/>
+<SCENE Name="Lockwood Dream Island Apartment" Type="Home" HOMEUID="0" SceneID="0168" config="apartments/island_developement/millionaire_apartment/Test1.scene" />
+<SCENE Name="Lockwood Gift Shop" Type="PublicLobby"  HOMEUID="0" SceneID="0169" config="Environments/lockwood_store/gift_shop_release_3/gift.scene" />
+<SCENE Name="Lockwood HQ" Type="PublicLobby"  HOMEUID="0" SceneID="0170" config="environments/lockwood_Store/store_release_6/scene/Store_release_6.scene"/>
+<SCENE Name="Lockwood Life Lakeside Oasis" Type="Home"  HOMEUID="0" SceneID="0481" config="APARTMENTS/ISLAND_DEVELOPEMENT/POOL_PARTY_APARTMENT/Oasis.scene"/>
+<SCENE Name="Lockwood Life Paradise Marina" Type="Home"  HOMEUID="0" SceneID="0486" config="Environments/Marina/Marina_Public/MarinaApt.scene"/>
+<SCENE Name="Lockwood Publishing Showcase" Type="PublicLobby"  HOMEUID="0" SceneID="0171" config="Environments/lockwood_store/store_release_4/scene/store_release_4.scene" />
+<SCENE Name="Lockwood Publishing Showcase Fa" Type="PublicLobby"  HOMEUID="0" SceneID="0172" config="Environments/lockwood_store/store_release_5/scene/store_release_5.scene" />
+<SCENE Name="Lockwood Venue" Type="Home" HOMEUID="0" SceneID="0173" Group="apartment" KEYWORDS="Home" config="Environments/Lockwood_Catwalk/apartment/Lockwood_Catwalk_apartment.scene"/>
+<SCENE Name="Loco Roco Mui Mui Island" Type="Home" HOMEUID="0" SceneID="0174" config="environments/locohouse_test_001/locohouse_test_001.scene" />
+<SCENE Name="Loco Roco MuiMui Ship" Type="PublicLobby"  HOMEUID="0" SceneID="0175" config="Environments/muimuiship/mui.scene" />
+<SCENE Name="LOD Sample DEV Scene" Type="PublicLobby"  HOMEUID="0" SceneID="0176" config="Environments/lodsamplescene/LodSampleScene.scene" />
+<SCENE Name="London Pub" Type="Home" HOMEUID="0" SceneID="0177" config="environments/pubApt/Pubapt.scene"/>
+<SCENE Name="LOOT Hollywood Hills Daytime Es" Type="PublicLobby"  HOMEUID="0" SceneID="0178" config="environments/home_theater_pad/Hollywood.scene"/>
+<SCENE Name="LOOT Hollywood Hills Nighttime" Type="PublicLobby"  HOMEUID="0" SceneID="0179" config="environments/home_theater_pad/home_theater_pad_nighttime.scene"/>
+<SCENE Name="LOOT Modular Sound Stage Set" Type="PublicLobby"  HOMEUID="0" SceneID="0180" config="Environments/soundstage_three/LootStage.scene" />
+<SCENE Name="LOOT Space Apartment" Type="Home" HOMEUID="0" SceneID="0181" config="Environments/loot_space_apartment/LootSpace.scene" />
+<SCENE Name="LOOT Space Station" Type="PublicLobby"  HOMEUID="0" SceneID="0182" config="Environments/loot_space_station/LootSpaceStation.scene" />
+<SCENE Name="LOOT Stage Set" Type="Home" HOMEUID="0" SceneID="0183" config="environments/soundstage/soundstage2.scene"/>
+<SCENE Name="Loot's Sunset Yacht" Type="Home" HOMEUID="0" SceneID="0184" config="environments/island_boat/YachtSun.scene"/>
+<SCENE Name="Planetland" Type="Home" HOMEUID="0" SceneID="0185" config="Environments/luxuryapt/planetland/Apt.scene" />
+<SCENE Name="Luxury Glass House" Type="Home" HOMEUID="0" SceneID="0186" config="environments/luxuryglasshouse/LuxuryGlassHouse.scene"/>
+<SCENE Name="Luxurious Tropical Paradise Bea" Type="Home" HOMEUID="0" SceneID="0187" config="environments/dieselislandapartment/dieselislandapartment.scene"/>
+<SCENE Name="Luxury Lighthouse Apartment" Type="Home" HOMEUID="0" SceneID="0538" config="environments/Lighthouse/LuxuryLighthouseApt.scene"/>
+<SCENE Name="Luxury Train Apartment" Type="Home" HOMEUID="0" SceneID="0551" config="environments/LuxuryTrain_Apt/LuxuryTrain_Apt.scene"/>
+<SCENE Name="Luxury Weekend Lake House" Type="Home" HOMEUID="0" SceneID="0188" config="environments/luxapt/lakehouse/LuxApt_Lakehouse.scene"/>
+<SCENE Name="Luxury Yacht Santorini Greece P" Type="Home" HOMEUID="0" SceneID="0189" config="environments/luxuryapt/yacht/luxuryapt_yacht.scene"/>
+<SCENE Name="Magic: The Gallery" Type="PublicLobby"  HOMEUID="0" SceneID="0190" config="environments/gallery/gallery.scene"/>
+<SCENE Name="Magic: The Gathering" Type="PublicLobby"  HOMEUID="0" SceneID="0191" config="Environments/ravnica/ravnica.scene" />
+<SCENE Name="Mahjong Apartment" Type="Home" HOMEUID="0" SceneID="0192" config="environments/mahjong_space/mahjong_space.scene"/>
+<SCENE Name="Manhattan City Penthouse" Type="Home" HOMEUID="0" SceneID="0193" config="environments/home_internal_scee/personal_spaces/manhattan_apartment/newyork.scene"/>
+<SCENE Name="Masq Ball - The Ballroom (Gold" Type="Home" HOMEUID="0" SceneID="0194" config="environments/ballroom/ballroomgold.scene" />
+<SCENE Name="Masquerade Ball - The Ballroom" Type="Home" HOMEUID="0" SceneID="0195" config="environments/gothic/BALLROOM.scene"/>
+<SCENE Name="Men In Black Headquarters" Type="PublicLobby"  HOMEUID="0" SceneID="0196" config="environments/mib_headquater/MIB_Headquater.scene"/>
+<SCENE Name="Men In Black Private Headquarte" Type="Home" HOMEUID="0" SceneID="0197" config="environments/mib_private_headquater/mib_private_headquater.scene"/>
+<SCENE Name="Mini Game Tutorial DEV Scene" Type="PublicLobby"  HOMEUID="0" SceneID="0198" config="Environments/MiniGameTutorial/MiniGameTutorial.scene" />
+<SCENE Name="MiniBots Training Facility" Type="PublicLobby"  HOMEUID="0" SceneID="0199" config="environments/minibots_training_facility/bot.scene"/>
+<SCENE Name="ModNation Racing Pit Stop Club" Type="PublicLobby"  HOMEUID="0" SceneID="0200" config="environments/modnation/ModNationClub.scene"/>
+<SCENE Name="Modnation Racers BackStage Pass" Type="PublicLobby"  HOMEUID="0" SceneID="0201" config="environments/modn_event_backstage_2ee9_afb3/Modnation.scene"/>
+<SCENE Name="Monster Japon Fishing Pond" Type="PublicLobby"  HOMEUID="0" SceneID="0467" config="environments/fishing_room_02/fishingroom2.scene" />
+<SCENE Name="Monster Japon Pole &amp; Line" Type="PublicLobby"  HOMEUID="0" SceneID="0445" config="environments/fishing_room_01/GAW.scene"/>
+<SCENE Name="Moon Forest Apartment" Type="Home" HOMEUID="0" SceneID="0202" config="environments/2011/per/per_luxurytent/per_LuxuryTent.scene"/>
+<SCENE Name="Moon Forest Open House" Type="PublicLobby" HOMEUID="0" SceneID="0203" config="environments/2011/pub/pub_luxurytent/pub_LuxuryTent.scene"/>
+<SCENE Name="Moonlight Personal Space (Peakv" Type="Home" HOMEUID="0" SceneID="0204" config="Environments/pns_lounge/pns01.scene" />
+<SCENE Name="MotorStorm: Carrier" Type="PublicLobby"  HOMEUID="0" SceneID="0205" config="environments/_motorstorm/ms_carrier/ms_Carrier.scene"/>
+<SCENE Name="MotorStorm Monument Valley Camp" Type="Home" HOMEUID="0" SceneID="0206" config="environments/_motorstorm/ms1_apartment/motorstorm_personal_space.scene"/>
+<SCENE Name="MotorStorm Pacific Rift Camp" Type="Home" HOMEUID="0" SceneID="0207" config="environments/_motorstorm/mspr_apartment/MSPRapt.scene"/>
+<SCENE Name="Mount Olympus" Type="Home" HOMEUID="0" SceneID="0208" config="environments/2011/per/per_mtolympus/per_mtolympus.scene"/>
+<SCENE Name="Musicality Apartment" Type="Home" HOMEUID="0" SceneID="0209" config="environments/rock/Music_Rock.scene"/>
+<SCENE Name="Music Unlimited Club" Type="PublicLobby" HOMEUID="0" SceneID="0485" config="environments/MusicUnlimited/MusicUnlimited.scene"/>
+<SCENE Name="My Private Hideaway" Type="Home" HOMEUID="0" SceneID="0210" config="lounge_base/a_jp_00/map/scenes/SouthernIslandApt.scene"/>
+<SCENE Name="NRage" Type="PublicLobby"  HOMEUID="0" SceneID="0211" config="Environments/nrage_blockout/nRage.scene" />
+<SCENE Name="Namco Arcade Center" Type="PublicLobby"  HOMEUID="0" SceneID="0212" config="Environments/bng_carrot7/NamcoArcade.scene" />
+<SCENE Name="Namco Theatre" Type="PublicLobby"  HOMEUID="0" SceneID="0213" config="Environments/playmax2/NamcoMovie.scene" />
+<SCENE Name="Neotopia Hub Apartment" Type="Home"  HOMEUID="0" SceneID="0536" config="Environments/Underspunheights/NeotopiaApt.scene" />
+<SCENE Name="Neptune Suite" Type="Home" HOMEUID="0" SceneID="0214" config="environments/neptune/Neptune.scene"/>
+<SCENE Name="Nightlife Lounge Open House" Type="PublicLobby"  HOMEUID="0" SceneID="0215" config="environments/2011/pub/pub_lounge/Night.scene"/>
+<SCENE Name="Nightlife Lounge Clubhouse" Type="Home" HOMEUID="0" SceneID="0216" config="environments/2011/club/club_lounge/Club_Lounge.scene"/>
+<SCENE Name="No Man's Land Tutorial Level 1" Type="PublicLobby"  HOMEUID="0" SceneID="0217" config="Environments/level1/NoManLandTutorial.scene" />
+<SCENE Name="No Man’s Land: Drydock" Type="PublicLobby"  HOMEUID="0" SceneID="0218" config="environments/cargobayhub/NoMan.scene"/>
+<SCENE Name="No Man's Land: Lobby Drydock" Type="Home" HOMEUID="0" SceneID="0219" config="environments/tr_drydock/drydock.scene"/>
+<SCENE Name="Novus Prime" Type="PublicLobby"  HOMEUID="0" SceneID="0220" config="environments/Nebulon/prime.scene"/>
+<SCENE Name="Novus Prime Officer's Quarters" Type="Home" HOMEUID="0" SceneID="0221" config="hellfiretest/novusapartment/novusApt.scene"/>
+<SCENE Name="Object Instance Example DEV Sce" Type="PublicLobby"  HOMEUID="0" SceneID="0222" config="Environments/ObjectInstanceExample/ObjectInstanceExample.scene" />
+<SCENE Name="ObjectProfiler" SceneID="db9e9811-5510-060e-b712-8df9f4c67bd3" Type="Home" HOMEUID="0" Group="Apartments" KEYWORDS="Home" config="Environments/ObjectProfiler/ObjectProfiler.scene" />
+<SCENE Name="Obsidian Officers Quarters" Type="Home" HOMEUID="0" SceneID="0530" config="hellfiretest/novusapartment/ObsidianOfficersQuarters.scene"/>
+<SCENE Name="Old West Saloon" Type="Home" HOMEUID="0" SceneID="0223" config="environments/saloonhome/saloonhome3.scene"/>
+<SCENE Name="Ooblag's Alien Casino" Type="PublicLobby"  HOMEUID="0" SceneID="0224" config="environments/alien_casino/alien_casino.scene"/>
+<SCENE Name="Original Home Square Apartment" Type="Home" HOMEUID="0" SceneID="0225" config="environments/home_internal_scee/home_lobbies/home_square/HomeSquareApt.scene"/>
+<SCENE Name="Oscar's Lobster Mania Island" Type="Home" HOMEUID="0" SceneID="0226" config="environments/olm_beachapt/oscar.scene"/>
+<SCENE Name="Palace Of The Seven Winds" Type="Home" HOMEUID="0" SceneID="0227" config="Environments/seven_winds/Seven_Winds.scene" />
+<SCENE Name="Palace Of The Seven Winds Club" Type="Home" HOMEUID="0" SceneID="0460" config="Environments/seven_winds/7windsclubhouse.scene" />
+<SCENE Name="Paradise Health Club Apart" Type="Home" HOMEUID="0" SceneID="0518" config="environments/paradise_health_club/paradisehealthclubapt.scene"/>
+<SCENE Name="Paradise On A Blue Whale" Type="PublicLobby" HOMEUID="0" SceneID="0498" config="lg_whale/a_jp_00/map/scenes/whale.scene" />
+<SCENE Name="Party at Jess's Apartment" Type="Home" HOMEUID="0" SceneID="0228" config="Environments/summerhouseparty/summerhouseparty.scene" />
+<SCENE Name="Paris Clock Tower Apartment" Type="Home" HOMEUID="0" SceneID="0229" config="environments/luxuryapt/clocktower/luxuryapt_clocktower.scene"/>
+<SCENE Name="Peakvox Labs" Type="PublicLobby"  HOMEUID="0" SceneID="0230" config="environments/peakvoxlounge/Peakvox.scene"/>
+<SCENE Name="Peakvox Ninja Lounge" Type="PublicLobby"  HOMEUID="0" SceneID="0231" config="environments/pns_lounge/PeakvoxNinjaLounge.scene"/>
+<SCENE Name="Peakvox Seas" Type="Home" HOMEUID="0" SceneID="0232" config="Environments/pns_lounge/pns.scene" />
+<SCENE Name="Personal Casino Apartment" Type="Home" HOMEUID="0" SceneID="0531" config="Environments/casino_personalgameroom/PersonalCasinoApt.scene" />
+<SCENE Name="PetrolHead Apartment" Type="Home" HOMEUID="0" SceneID="0532" config="Environments/petrolhead_garage/petrolheadapt.scene" />
+<SCENE Name="Pharaohs Tomb" Type="Home" HOMEUID="0" SceneID="0233" config="environments/luxuryapt/pharoah/luxuryapt_pharoah.scene"/>
+<SCENE Name="Pirate Galleon Apartment" Type="Home" HOMEUID="0" SceneID="0234" config="environments/PW_dock/PirateApt.scene"/>
+<SCENE Name="PixelJunk Exhibition" Type="PublicLobby"  HOMEUID="0" SceneID="0235" config="environments/pjmuseum/pjmuseum.scene"/>
+<SCENE Name="PixelJunk Shooter Mother Ship" Type="PublicLobby"  HOMEUID="0" SceneID="0236" config="environments/shooter_spaceship/JunkShooter.scene"/>
+<SCENE Name="Playground Apartment" Type="Home" HOMEUID="0" SceneID="0237" config="environments/playground/Playground_apartment/PGapt.scene"/>
+<SCENE Name="PlayStation Home Mansion First" Type="Home" HOMEUID="0" SceneID="0238" config="environments/luxapt_mansion_1f/LuxApt_Mansion_1f.scene"/>
+<SCENE Name="PlayStation Home Mansion Garage" Type="Home" HOMEUID="0" SceneID="0239" config="Environments/2010/per/per_mansion/luxapt_mansion_garage/LuxApt_Mansion_Garage.scene" />
+<SCENE Name="PlayStation Home Mansion Infini" Type="Home" HOMEUID="0" SceneID="0240" config="environments/2010/per/per_mansion/luxapt_mansion_backyard/luxapt_mansion_backyard.scene"/>
+<SCENE Name="PlayStation Home Mansion Second" Type="Home" HOMEUID="0" SceneID="0241" config="environments/2010/per/per_mansion/luxapt_mansion_2f/luxapt_mansion_2f.scene"/>
+<SCENE Name="PlayStation Move BackStage Pass" Type="PublicLobby"  HOMEUID="0" SceneID="0242" config="Environments/scee_psmove_backstag_e4fd_5641/PSmove.scene" />
+<SCENE Name="PlayStation Network Mini's Even" Type="PublicLobby"  HOMEUID="0" SceneID="0243" config="environments/playstation_network_4f38_f0b7/psn.scene"/>
+<SCENE Name="PlayStation Network Mini's Loun" Type="PublicLobby"  HOMEUID="0" SceneID="0244" config="environments/scee_hoh_minis_top_8aa7_dd62/PSNMiniSpace.scene"/>
+<SCENE Name="PlayStation Plus Private Member" Type="PublicLobby"  HOMEUID="0" SceneID="0245" config="environments/playstation_plus_5abc_6eaa/Plus.scene"/>
+<SCENE Name="PlayStation The Studio Mini's S" Type="PublicLobby"  HOMEUID="0" SceneID="0246" config="environments/The_Studio_7EA8_A1A/Studio.scene"/>
+<SCENE Name="Plum Tree Pavilion Apartment" Type="Home" HOMEUID="0" SceneID="0247" config="environments/2011/per/per_modasian/plum.scene" />
+<SCENE Name="Plum Tree Pavilion Open House" Type="PublicLobby"  HOMEUID="0" SceneID="0248" config="environments/2011/pub/pub_modasian/plumpublic.scene" />
+<SCENE Name="Polar Rush Tundra Lodge Apart" Type="Home"  HOMEUID="0" SceneID="0509" config="environments/snowtrack/TundraLodgeApt.scene" />
+<SCENE Name="Polar Rush Tundra Lodge Public" Type="PublicLobby"  HOMEUID="0" SceneID="0503" config="environments/snowtrack/polarrush.scene" />
+<SCENE Name="Prehistoric Canyon Visitor Cent" Type="PublicLobby" HOMEUID="0" SceneID="0546" config="apartments/dinotop/dinotoo/PrehistoricCanyonPublic.scene"/>
+<SCENE Name="Prehistoric Valley Personal Spa" Type="Home" HOMEUID="0" SceneID="0249" config="apartments/dinotop/dinotop/Prehistoric.scene"/>
+<SCENE Name="RC Rally Public Space" Type="PublicLobby"  HOMEUID="0" SceneID="0250" config="Environments/rc_track1/rcRally.scene" />
+<SCENE Name="RaceOn Apartment" Type="Home" HOMEUID="0" SceneID="0251" config="Environments/race_on_garage/RaceOnApt.scene" />
+<SCENE Name="Radd &amp; Son Garage Rooftop Apart" Type="Home" HOMEUID="0" SceneID="0252" config="games/common/emo.scene" />
+<SCENE Name="Rainforest Lodge" Type="Home" HOMEUID="0" SceneID="0537" config="environments/Luxury_Rainforest_Apartment/RainforestLodge.scene" />
+<SCENE Name="Rainy Day Apartment" Type="Home" HOMEUID="0" SceneID="0515" config="environments/basic_apartment_evening/HarbourStudioEvening.scene" />
+<SCENE Name="Ratchet &amp; Clank: Home Sweet Hom" Type="Home" HOMEUID="0" SceneID="0253" config="Environments/nsirchome_apartment_20ba_60f2/nsirchromeApt.scene"/>
+<SCENE Name="Ratchet &amp; Clank: Time Travelers" Type="PublicLobby"  HOMEUID="0" SceneID="0254" config="environments/nsirchome_hub_2bc9_87fd/ratchet.scene"/>
+<SCENE Name="Raven Barracks" Type="Home" HOMEUID="0" SceneID="0255" config="depot/home_environment/mag/ravenapt/MagRavenApt.scene"/>
+<SCENE Name="Red Bull Air Race" Type="PublicLobby"  HOMEUID="0" SceneID="0256" config="Environments/red_bull/RedBullAirRace.scene" />
+<SCENE Name="Red Bull Beach" Type="PublicLobby"  HOMEUID="0" SceneID="0257" config="environments/red_bull_beach/RedBullBeach.scene"/>
+<SCENE Name="Red Bull House of Skate" Type="Home" HOMEUID="0" SceneID="0258" config="environments/redbull_skatepark/redbull_skatepark.scene"/>
+<SCENE Name="RedBull Hub" Type="PublicLobby"  HOMEUID="0" SceneID="0259" config="environments/red_bull_hub/RedBullHub.scene"/>
+<SCENE Name="Repertoire Sample DEV Scene" Type="PublicLobby"  HOMEUID="0" SceneID="0260" config="Environments/MiniGameTutorial/RepertoireSample.scene" />
+<SCENE Name="Resident Evil 5 Corner Pyamy Bu" Type="PublicLobby"  HOMEUID="0" SceneID="0261" config="Environments/hbh5_exhibition_room/scenes/HBH5_Exhibition_room.scene" />
+<SCENE Name="Resident Evil 5 Studio Lot" Type="PublicLobby"  HOMEUID="0" SceneID="0262" config="environments/home_bh5/scenes/RE5.scene"/>
+<SCENE Name="Resistance 2 Station" Type="PublicLobby"  HOMEUID="0" SceneID="0263" config="Environments/r2station/R2.scene" />
+<SCENE Name="Resistance 3 Diner" Type="Home" HOMEUID="0" SceneID="0264" config="environments/r3_diner_interior/r3diner.scene"/>
+<SCENE Name="Rooftop Terrace Apartment" Type="Home" HOMEUID="0" SceneID="0505" config="environments/Rooftop_Apartment/Roofapt.scene"/>
+<SCENE Name="S.I.N.'s Secret Base from Stree" Type="PublicLobby"  HOMEUID="0" SceneID="0265" config="Environments/stage_lab/Fighter.scene" />
+<SCENE Name="Santorini Greece" Type="Home" HOMEUID="0" SceneID="0452" config="environments/luxuryapt/greece/greeceapt.scene"/>
+<SCENE Name="SCEA Action District" Type="PublicLobby"  HOMEUID="0" SceneID="0266" config="environments/scea_core_action/Action.scene"/>
+<SCENE Name="SCEA Action District PS4" Type="PublicLobby"  HOMEUID="0" SceneID="0554" config="environments/scea_core_action/SCEA_PS4_Action.scene"/>
+<SCENE Name="SCEA Adventure District" Type="PublicLobby"  HOMEUID="0" SceneID="0267" config="environments/scea_core_adventure/AD.scene"/>
+<SCENE Name="SCEA Bowling Alley" Type="PublicLobby"  HOMEUID="0" SceneID="0268" config="environments/home_internal_SCEA/home_lobbies/game_space/SCEAbowling.scene"/>
+<SCENE Name="SCEA Central Plaza" Type="PublicLobby"  HOMEUID="0" SceneID="0269" config="environments/scea_core_plaza/CentralPlaza.scene"/>
+<SCENE Name="SCEA Central Plaza UC" Type="PublicLobby"  HOMEUID="0" SceneID="0270" config="environments/scea_core_plaza/CentralPlazaUC.scene"/>
+<SCENE Name="SCEA Central Plaza Dead Island" Type="PublicLobby"  HOMEUID="0" SceneID="0271" config="Environments/deadisland_plaza/dead.scene" />
+<SCENE Name="SCEA Central Plaza KillZone 3" Type="PublicLobby"  HOMEUID="0" SceneID="0272" config="Environments/killzone_plaza/CPKill.scene" />
+<SCENE Name="SCEA Central Plaza Winter Editi" Type="PublicLobby"  HOMEUID="0" SceneID="0273" config="environments/scea_core_plaza/CentralPlazaWinter.scene"/>
+<SCENE Name="SCEA Cinema Auditorium V1" Type="PublicLobby"  HOMEUID="0" SceneID="0274" config="environments/home_internal_scea/home_lobbies/cinema/Cinema_Auditorium_Nova.scene"/>
+<SCENE Name="SCEA Home Theatre Lobby" Type="PublicLobby"  HOMEUID="0" SceneID="0275" config="environments/home_internal_scea/home_lobbies/cinema/cinema_nova_v2.scene"/>
+<SCENE Name="SCEA Indie Park" Type="PublicLobby"  HOMEUID="0" SceneID="0276" config="environments/home_internal_scee/home_lobbies/casualgamespace/SCEAindiePark.scene"/>
+<SCENE Name="SCEA Mall 1st Floor" Type="PublicLobby"  HOMEUID="0" SceneID="0277" config="environments/scea_core_marketplace/FirstFloor.scene"/>
+<SCENE Name="SCEA Mall 2nd Floor" Type="PublicLobby"  HOMEUID="0" SceneID="0278" config="environments/scea_core_marketplace/Floor2.scene"/>
+<SCENE Name="SCEA Original Mall" Type="PublicLobby"  HOMEUID="0" SceneID="0279" config="environments/home_internal_scea/home_lobbies/marketplace/OGMALLUSA.scene"/>
+<SCENE Name="SCEA Pier Park" Type="PublicLobby"  HOMEUID="0" SceneID="0280" config="Environments/scea_core_casual/pier.scene" />
+<SCENE Name="SCEA PlayStation Home Hold 'em" Type="PublicLobby"  HOMEUID="0" SceneID="0281" config="environments/scea_core_sports/sports_pokerroom/SportsPoker.scene"/>
+<SCENE Name="SCEA Sports Walk" Type="PublicLobby"  HOMEUID="0" SceneID="0282" config="environments/scea_core_sports/Sport.scene"/>
+<SCENE Name="SCEA The Gamer's Lounge" Type="PublicLobby"  HOMEUID="0" SceneID="0283" config="environments/home_internal_scej/home_lobbies/jcafe/GamersLounge.scene"/>
+<SCENE Name="SCEA The Hub" Type="PublicLobby"  HOMEUID="0" SceneID="0285" config="environments/scea_plaza_station/SCEAHUB.scene"/>
+<SCENE Name="SCEA The Hub PS4" Type="PublicLobby"  HOMEUID="0" SceneID="0545" config="environments/scea_plaza_station/SCEA_CORE_PLAZASTATION_PS4.scene"/>
+<SCENE Name="SCEA The Hub Street Fighter X T" Type="PublicLobby"  HOMEUID="0" SceneID="0284" config="environments/scea_plaza_station_streetfighter/HubFighter.scene"/>
+<SCENE Name="SCEAsia East Mall New" Type="PublicLobby"  HOMEUID="0" SceneID="0286" config="environments/home_internal_scee/home_lobbies/marketplace_2/asiamall.scene"/>
+<SCENE Name="SCEAsia East Mall Old" Type="PublicLobby"  HOMEUID="0" SceneID="0287" config="environments/home_internal_scee/home_lobbies/marketplace_2/asia_mall_2/asiamall2.scene"/>
+<SCENE Name="SCEAsia Lounge" Type="PublicLobby"  HOMEUID="0" SceneID="0288" config="environments/hoh/hoh_top_floor/hoh_top_floor.scene"/>
+<SCENE Name="SCEE Auditorium 1" Type="PublicLobby"  HOMEUID="0" SceneID="0289" config="environments/theatre/auditorium/movie1.scene"/>
+<SCENE Name="SCEE Auditorium 2" Type="PublicLobby"  HOMEUID="0" SceneID="0290" config="environments/theatre/auditorium/Movie2.scene"/>
+<SCENE Name="SCEE Auditorium 3" Type="PublicLobby"  HOMEUID="0" SceneID="0291" config="environments/theatre/auditorium/Movie3.scene"/>
+<SCENE Name="SCEE Auditorium 4" Type="PublicLobby"  HOMEUID="0" SceneID="0292" config="environments/theatre/auditorium/Movie4.scene"/>
+<SCENE Name="SCEE Auditorium 5" Type="PublicLobby"  HOMEUID="0" SceneID="0293" config="environments/theatre/auditorium/Movie5.scene"/>
+<SCENE Name="SCEE Auditorium 6" Type="PublicLobby"  HOMEUID="0" SceneID="0294" config="environments/theatre/auditorium/movie6.scene"/>
+<SCENE Name="SCEE Bowling Alley" Type="PublicLobby"  HOMEUID="0" SceneID="0295" config="environments/Home_internal_SCEE/Home_Lobbies/Game_Space/Bowling.scene"/>
+<SCENE Name="SCEE Cinema Auditorium V1" Type="PublicLobby"  HOMEUID="0" SceneID="0296" config="environments/home_internal_scee/home_lobbies/cinema_auditorium/SCEEMovieTest.scene"/>
+<SCENE Name="SCEE Home Square Version 1" Type="PublicLobby"  HOMEUID="0" SceneID="0297" config="Environments/Home_internal_SCEE/Home_Lobbies/Home_Square/HomeSquareOG.scene" />
+<SCENE Name="SCEE Home Square Version 2" Type="PublicLobby"  HOMEUID="0" SceneID="0298" config="environments/home_internal_scee/home_lobbies/home_square_2/EUHOMESQUARE.scene"/>
+<SCENE Name="SCEE Home Square Version 2 (Hal" Type="PublicLobby"  HOMEUID="0" SceneID="0299" config="environments/home_internal_scee/home_lobbies/home_square_2/ween/SCEEHomeSquare2Ween.scene"/>
+<SCENE Name="SCEE Home Square Version 2 LBP2" Type="PublicLobby"  HOMEUID="0" SceneID="0300" config="environments/home_internal_scee/home_lobbies/home_square_2/LBPhomesquare.scene"/>
+<SCENE Name="SCEE Home Square Version 2 (Win" Type="PublicLobby"  HOMEUID="0" SceneID="0301" config="environments/home_internal_scee/home_lobbies/home_square_2/xmas/HomeSquareXmas2.scene"/>
+<SCENE Name="SCEE Home Square Version 3" Type="PublicLobby"  HOMEUID="0" SceneID="0302" config="environments/home_internal_scee/home_lobbies/homesquare3/HomeSquare3.scene" />
+<SCENE Name="SCEE Home Square Version 3 LBP" Type="PublicLobby"  HOMEUID="0" SceneID="0303" config="environments/home_internal_scee/home_lobbies/homesquare3/HS3LBP.scene"/>
+<SCENE Name="SCEE Home Square Version 3 LBPK" Type="PublicLobby"  HOMEUID="0" SceneID="0304" config="environments/home_internal_scee/home_lobbies/homesquare3/HS3LBPK.scene"/>
+<SCENE Name="SCEE Home Square Version 3 Lynx" Type="PublicLobby"  HOMEUID="0" SceneID="0305" config="environments/home_internal_scee/home_lobbies/homesquare3/HS3Lynx.scene"/>
+<SCENE Name="SCEE Home Square Version 3 (Win" Type="PublicLobby"  HOMEUID="0" SceneID="0306" config="Environments/home_internal_scee/home_lobbies/homesquare3/HomeSquareXmas3.scene" />
+<SCENE Name="SCEE Home Square 3 Winter 2013" Type="PublicLobby"  HOMEUID="0" SceneID="0453" config="christmas/model/hs3xmas2.scene" />
+<SCENE Name="SCEE Home Square Version 4" Type="PublicLobby"  HOMEUID="0" SceneID="0307" config="ENVIRONMENTS/homesquare4/HomeSquare4_edit01.scene" />
+<SCENE Name="SCEE Home Square Version 4 (Hal" Type="PublicLobby"  HOMEUID="0" SceneID="0501" config="ENVIRONMENTS/homesquare4/HS4Halloween.scene" />
+<SCENE Name="SCEE Home Square Version 4 (Win" Type="PublicLobby"  HOMEUID="0" SceneID="0484" config="ENVIRONMENTS/homesquare4/hs4xmas.scene" />
+<SCENE Name="SCEE Home Theatre Lobby" Type="PublicLobby"  HOMEUID="0" SceneID="0308" config="environments/Home_internal_SCEE/Home_Lobbies/Cinema/SCEECinema.scene"/>
+<SCENE Name="SCEE Indie Park" Type="PublicLobby" HOMEUID="0" SceneID="0309" config="environments/home_internal_scee/home_lobbies/casualgamespace/indie.scene"/>
+<SCENE Name="SCEE Original Mall" Type="PublicLobby"  HOMEUID="0" SceneID="0310" config="environments/home_internal_scee/home_lobbies/marketplace/SCEEOGMALL.scene"/>
+<SCENE Name="SCEE PlayStation Vita Lounge" Type="PublicLobby"  HOMEUID="0" SceneID="0311" config="Environments/jcafe/Vita_cafe.scene" />
+<SCENE Name="SCEE Shopping Mall East" Type="PublicLobby"  HOMEUID="0" SceneID="0312" config="Environments/home_internal_scee/home_lobbies/marketplace_2/EastMall.scene" />
+<SCENE Name="SCEE Shopping Mall West" Type="PublicLobby"  HOMEUID="0" SceneID="0313" config="Environments/home_internal_scee/home_lobbies/marketplace_2_extension/WestMall.scene" />
+<SCENE Name="SCEE Test Arcade Cabinet Game D" Type="PublicLobby"  HOMEUID="0" SceneID="0314" config="environments/ArcadeTutorial1/ArcadeTutorialCompleted.scene"/>
+<SCENE Name="SCEE Test Ball Physics Develop" Type="PublicLobby"  HOMEUID="0" SceneID="0315" config="environments/ScriptedSceneTutorial1/ScriptedSceneTutorialCompleted.scene"/>
+<SCENE Name="SCEE Test Mini-Game Developme" Type="PublicLobby"  HOMEUID="0" SceneID="0316" config="environments/MiniGameTutorial1/MiniGameTutorial.scene"/>
+<SCENE Name="SCEE Test Video Development" Type="PublicLobby"  HOMEUID="0" SceneID="0317" config="environments/VideoScreenTutorial/VideoScreenTutorialCompleted.scene"/>
+<SCENE Name="SCEE Theatre Lobby" Type="PublicLobby"  HOMEUID="0" SceneID="0318" config="Environments/theatre/movie.scene" />
+<SCENE Name="SCEE Tree House Apartment" Type="Home" HOMEUID="0" SceneID="0319" config="environments/home_internal_scee/personal_spaces/tree_house/tree.scene"/>
+<SCENE Name="SCEE Water Development Test" Type="PublicLobby"  HOMEUID="0" SceneID="0320" config="environments/WaterTutorial/WaterTutorial.scene"/>
+<SCENE Name="SCEJ Bowling Alley" Type="PublicLobby"  HOMEUID="0" SceneID="0321" config="environments/home_internal_SCEJ/home_lobbies/JGame_space/JGame_Space_Nova.scene"/>
+<SCENE Name="SCEJ Cinema Auditorium" Type="PublicLobby"  HOMEUID="0" SceneID="0322" config="environments/Home_internal_SCEJ/Home_Lobbies/JCinema_Auditorium/JapanMovie.scene"/>
+<SCENE Name="SCEJ Cubic Apartment" Type="Home"  HOMEUID="0" SceneID="0323" config="environments/home_internal_scej/personal_spaces/Basic_Apartment_Japan/Basic_Apartment_Japan.scene"/>
+<SCENE Name="SCEJ Home Square" Type="PublicLobby"  HOMEUID="0" SceneID="0323" config="environments/home_internal_scej/home_lobbies/jhome_square/JapanHomeSquareOG.scene"/>
+<SCENE Name="SCEJ Home Square Autumn" Type="PublicLobby"  HOMEUID="0" SceneID="0325" config="environments/home_internal_scej/home_lobbies/jhome_square_win_f/JHome_Square_nova_win_f.scene"/>
+<SCENE Name="SCEJ Home Square Spring" Type="PublicLobby"  HOMEUID="0" SceneID="0477" config="environments/home_internal_scej/home_lobbies/jhome_square/HS_Spring.scene"/>
+<SCENE Name="SCEJ Home Square Sunset" Type="PublicLobby"  HOMEUID="0" SceneID="0326" config="environments/JapanHomeSquare3/home_internal_scej/home_lobbies/jhome_square_2010_win_night/JapanHomeSquareSun.scene" />
+<SCENE Name="SCEJ Home Square Winter Day" Type="PublicLobby"  HOMEUID="0" SceneID="0327" config="environments/JapanHomeSquare/home_internal_scej/home_lobbies/jhome_square_2010_win_night/JapanHomeSquareDay.scene"/>
+<SCENE Name="SCEJ Home Square Winter Night" Type="PublicLobby"  HOMEUID="0" SceneID="0328" config="environments/home_internal_scej/home_lobbies/jhome_square_2010_win_night/JHome_Square_Sky_2010_win_night.scene"/>
+<SCENE Name="SCEJ Music Cafe" Type="PublicLobby"  HOMEUID="0" SceneID="0329" config="environments/home_internal_scej/home_lobbies/jcafe_music/jcafe_music_nova.scene"/>
+<SCENE Name="SCEJ Original Mall" Type="PublicLobby"  HOMEUID="0" SceneID="0330" config="environments/home_internal_scej/home_lobbies/marketplace/JapanMarket.scene" />
+<SCENE Name="SCEJ Home Theatre Lobby" Type="PublicLobby"  HOMEUID="0" SceneID="0478" config="environments/home_internal_scej/home_lobbies/JCinema/SCEJCinema.scene" />
+<SCENE Name="Sci Fi Apartment" Type="Home"  HOMEUID="0" SceneID="0494" config="environments/SciFi/SciFiApt.scene" />
+<SCENE Name="Screens Example DEV Scene" Type="PublicLobby"  HOMEUID="0" SceneID="0331" config="Environments/screensexample/ScreensExample.scene" />
+<SCENE Name="Scripted Scene Tutorial DEV Sce" Type="PublicLobby"  HOMEUID="0" SceneID="0332" config="Environments/ScriptedSceneTutorial/ScriptedSceneTutorial.scene" />
+<SCENE Name="Scripted Sky DEV Scene" Type="PublicLobby"  HOMEUID="0" SceneID="0333" config="Environments/scriptedskyscene/ScriptedSkyScene.scene" />
+<SCENE Name="SeaClyff Retreat" Type="Home" HOMEUID="0" SceneID="0334" config="environments/racing_apt/SeaClyff.scene" />
+<SCENE Name="SeaClyff Retreat Clubhouse" Type="Home" HOMEUID="0" SceneID="0495" config="environments/racing_apt/models/SeaClyffclub.scene" />
+<SCENE Name="SeaClyff Retreat Night" Type="Home" HOMEUID="0" SceneID="0519" config="environments/racing_apt/models/SeaClyffNightApt.scene" />
+<SCENE Name="Serenity Plaza Mini-Bots Hallo" Type="PublicLobby"  HOMEUID="0" SceneID="0335" config="environments/minib_minibot_city/minibot.scene"/>
+<SCENE Name="Serenity Plaza Minibots" Type="PublicLobby"  HOMEUID="0" SceneID="0336" config="environments/minib_minibot_city/SerenityPlaza.scene"/>
+<SCENE Name="Shoei Kingdom Day" Type="PublicLobby"  HOMEUID="0" SceneID="0447" config="environments/phk_lounge/KingdomJapan.scene"/>
+<SCENE Name="Shoei Kingdom Night" Type="PublicLobby"  HOMEUID="0" SceneID="0447" config="environments/phk_lounge/KingdomJapan_Night.scene"/>
+<SCENE Name="Shoei Kingdom Sunset" Type="PublicLobby"  HOMEUID="0" SceneID="0448" config="environments/phk_lounge/ShoeiJP.scene"/>
+<SCENE Name="Silicon Lounge" Type="Home" HOMEUID="0" SceneID="0337" config="environments/sodium_neon_apartment/sodiumSilicon.scene"/>
+<SCENE Name="Silent Hill Downpour Diner" Type="Home" HOMEUID="0" SceneID="0338" config="environments/silent_hill_downpoor_diner/silentHillDiner.scene"/>
+<SCENE Name="Simple Animation Example DEV Sc" Type="PublicLobby"  HOMEUID="0" SceneID="0339" config="Environments/simpleanimationexample/anim_obj_world.scene" />
+<SCENE Name="SingStar Christmas VIP Lounge" Type="PublicLobby"  HOMEUID="0" SceneID="0340" config="environments/home_internal_scee/home_lobbies/VIP_Scene/SingStarXmas.scene"/>
+<SCENE Name="SingStar Original 2009" Type="PublicLobby"  HOMEUID="0" SceneID="0341" config="ENVIRONMENTS/Home_internal_SCEE/Home_Lobbies/singstar/SingStar_Main.scene"/>
+<SCENE Name="SingStar Store" Type="PublicLobby"  HOMEUID="0" SceneID="0342" config="ENVIRONMENTS/Home_internal_SCEE/Home_Lobbies/singstar/SingStar_store/singstar_store_update.scene"/>
+<SCENE Name="Siren Lounge" Type="PublicLobby"  HOMEUID="0" SceneID="0343" config="Environments/siren_hos_entrance/Siren.scene" />
+<SCENE Name="Siren Lounge: Ward of Despair" Type="PublicLobby"  HOMEUID="0" SceneID="0344" config="Environments/siren_hos_1f/Siren2.scene" />
+<SCENE Name="Slap Happy Sam's Stage Show" Type="PublicLobby"  HOMEUID="0" SceneID="0345" config="environments/gd_tent1_environment_v1/Slap.scene"/>
+<SCENE Name="Snow Globe Apartment" Type="Home"  HOMEUID="0" SceneID="0524" config="environments/snow_globe/snowglobeapt.scene"/>
+<SCENE Name="Snow Globe Clubhouse" Type="Home"  HOMEUID="0" SceneID="0525" config="environments/snow_globe/snowglobeclub.scene"/>
+<SCENE Name="SOCOM Opposing Force" Type="PublicLobby"  HOMEUID="0" SceneID="0346" config="environments/opfor/SocomGarage.scene" />
+<SCENE Name="SOCOM Tactical Ops Center" Type="PublicLobby"  HOMEUID="0" SceneID="0347" config="environments/SOCOM_TOC/SocomToc.scene" />
+<SCENE Name="Sodium Blimp" Type="Home" HOMEUID="0" SceneID="0348" config="environments/sodiumblimp/sodium_blimp/models/Blimp.scene"/>
+<SCENE Name="Sodium Hub" Type="PublicLobby"  HOMEUID="0" SceneID="0349" config="environments/sodium/Sodium1.scene"/>
+<SCENE Name="Sodium Hub Version 2" Type="PublicLobby"  HOMEUID="0" SceneID="0350" config="environments/sodium1ver2/sodium1ver2.scene"/>
+<SCENE Name="Sodium Main Apartment" Type="Home" HOMEUID="0" SceneID="0351" config="environments/sodium_main/sodium_main.scene"/>
+<SCENE Name="Sodium 1 Salt Shooter Apartment" Type="Home" HOMEUID="0" SceneID="0352" config="environments/sodium_one_apartment/sodium_one_apartment.scene"/>
+<SCENE Name="Sodium Trainer" Type="PublicLobby"  HOMEUID="0" SceneID="0353" config="environments/sodium_trainer/sodium_trainer.scene" />
+<SCENE Name="Sodium 2 Project Velocity" Type="PublicLobby"  HOMEUID="0" SceneID="0354" config="environments/sodium2_desertracer/Sodium2.scene"/>
+<SCENE Name="Southern Island Hidea" Type="PublicLobby"  HOMEUID="0" SceneID="0111" config="lounge_base/a_jp_00/map/scenes/G_test_map_G01_asia_00.scene" />
+<SCENE Name="Southern Island Valen" Type="PublicLobby"  HOMEUID="0" SceneID="0112" config="lounge_base/a_jp_00/map/scenes/gzsouthVal.scene"/>
+<SCENE Name="Spirit of Ibiza Pacha VidZone" Type="PublicLobby"  HOMEUID="0" SceneID="0355" config="environments/pacha_eventspace/Spirit.scene"/>
+<SCENE Name="Stately Home" Type="Home" HOMEUID="0" SceneID="0541" config="environments/Stately_Home/StatelyHomeApt.scene"/>
+<SCENE Name="Stately Home Clubhouse" Type="Home" HOMEUID="0" SceneID="0542" config="environments/Stately_Home/StatelyHomeClub.scene"/>
+<SCENE Name="Summer House" Type="Home" HOMEUID="0" SceneID="0356" config="environments/Home_internal_SCEE/Personal_Spaces/summerhouse/Summer.scene"/>
+<SCENE Name="Sunlit Meadow" Type="Home" HOMEUID="0" SceneID="0357" config="apartments/simple_apartments/mushroom_glade/mushroom_glade.scene"/>
+<SCENE Name="Sunset Lounge" Type="PublicLobby"  HOMEUID="0" SceneID="0358" config="apartments/island_developement/sunset_lounge/Sunset.scene"/>
+<SCENE Name="SVER Barracks" Type="Home" HOMEUID="0" SceneID="0359" config="depot/home_environment/mag/valorapt/MagValorApt.scene"/>
+<SCENE Name="Tekken 6 - Mishima Zaibatsu Rec" Type="PublicLobby"  HOMEUID="0" SceneID="0360" config="environments/bng_tekken6_lounge7/Tekken6.scene"/>
+<SCENE Name="The Aurora Chinatown Apartment" Type="Home" HOMEUID="0" SceneID="0522" config="environments/chinaenv_home/aurorachinatownapt.scene"/>
+<SCENE Name="The Avalon Keep Personal Space" Type="Home" HOMEUID="0" SceneID="0361" config="environments/avalon_spaces/assets_public_space_01/avalon.scene"/>
+<SCENE Name="The Bunker Bar" Type="Home" HOMEUID="0" SceneID="0488" config="Apartments/Island_Developement/Lounge_1/Bunkerbar.scene"/>
+<SCENE Name="The Casino Penthouse Suite Pers" Type="Home" HOMEUID="0" SceneID="0362" config="environments/viphotelsuite2/CasinoPenthouse.scene"/>
+<SCENE Name="The Casino: Bingo Hall" Type="PublicLobby"  HOMEUID="0" SceneID="0363" config="environments/casinobingohall/BingoHall.scene"/>
+<SCENE Name="The Casino: Blackjack &amp; Craps" Type="PublicLobby"  HOMEUID="0" SceneID="0364" config="environments/casinoblackjackroom/BlackJack.scene"/>
+<SCENE Name="The Casino: Complimentary Hotel" Type="Home" HOMEUID="0" SceneID="0365" config="Environments/cheaphotelspace/casinoHotel.scene" />
+<SCENE Name="The Casino: Concourse" Type="PublicLobby"  HOMEUID="0" SceneID="0366" config="environments/casinolobbytest/casinolobbytest.scene"/>
+<SCENE Name="The Casino: Highrollers" Type="PublicLobby"  HOMEUID="0" SceneID="0552" config="environments/casino_highrollerlounge/casino_highrollerlounge.scene"/>
+<SCENE Name="The Casino: Poker Room" Type="PublicLobby"  HOMEUID="0" SceneID="0367" config="environments/casinopokerroom/casino.scene"/>
+<SCENE Name="The Casino: Poker Tournament" Type="PublicLobby"  HOMEUID="0" SceneID="0553" config="environments/casino_poker_tournament/casino_poker_tournament.scene"/>
+<SCENE Name="The Casino: Roulette &amp; Big 6" Type="PublicLobby"  HOMEUID="0" SceneID="0368" config="environments/casinobigsixroom/BigSix.scene"/>
+<SCENE Name="The Casino: VIP Room" Type="PublicLobby"  HOMEUID="0" SceneID="0496" config="environments/casinoVIProom/casinovip.scene"/>
+<SCENE Name="The Complex" Type="Home" HOMEUID="0" SceneID="0369" config="environments/complex/TheComplex.scene" />
+<SCENE Name="The Complex 2" Type="Home" HOMEUID="0" SceneID="0370" config="environments/complex2/Complex2.scene" />
+<SCENE Name="The Dragons Lair" Type="Home" HOMEUID="0" SceneID="0371" config="environments/dlspace/DragonsLair.scene" />
+<SCENE Name="The Dream Yacht" Type="Home" HOMEUID="0" SceneID="0372" config="environments/scenes/yacht/DreamYachtApt.scene"/>
+<SCENE Name="The Dream Yacht: Arctic Voyage" SceneID="0373" Type="Home" HOMEUID="0"  config="environments/scenes/yacht_arctic/YachtCold.scene" />
+<SCENE Name="The Drey VIP Room Female" Type="Home"  HOMEUID="0" SceneID="0533" config="Apartments/Drey/Drey_Box/DreyVIPRoomFemale.scene"/>
+<SCENE Name="The Drey VIP Room Male" Type="Home"  HOMEUID="0" SceneID="0534" config="Apartments/Drey/Drey_Box/DreyVIPRoomMale.scene"/>
+<SCENE Name="The Ford Showroom" Type="PublicLobby"  HOMEUID="0" SceneID="0374" config="environments/ford_showroom/Ford.scene"/>
+<SCENE Name="The Gallery (Fat Princess)" Type="PublicLobby"  HOMEUID="0" SceneID="0375" config="Environments/pr_gallery_fatprincess/FatPrincess.scene" />
+<SCENE Name="The Godfather II" Type="PublicLobby"  HOMEUID="0" SceneID="0376" config="Environments/godfather_2/gf2.scene" />
+<SCENE Name="The Greenhouse Open House" Type="PublicLobby"  HOMEUID="0" SceneID="0543" config="Environments/Greenhouse/GreenhouseOpen.scene" />
+<SCENE Name="The Haven of the Skies Club" Type="Home"  HOMEUID="0" SceneID="0547" config="apartments/1001_nights/palace_Clubhouse/HavenOfTheSkiesClub.scene"/>
+<SCENE Name="The House Apartment" Type="Home"  HOMEUID="0" SceneID="0517" config="Environments/living_house/thehouseapartment.scene" />
+<SCENE Name="The Hustle Kings Ball Dodge Cha" Type="PublicLobby"  HOMEUID="0" SceneID="0377" config="Environments/hkings_gamespace_accb_8bc8/HkingsGame.scene" />
+<SCENE Name="The Hustle Kings Event Landing" Type="PublicLobby"  HOMEUID="0" SceneID="0378" config="Environments/HKINGS_EVENTLANDING_83EA_A579/HUSTLEKINGSLANDING.scene" />
+<SCENE Name="The Journey" Type="PublicLobby"  HOMEUID="0" SceneID="0379" config="environments/thejourney/TheJourney.scene"/>
+<SCENE Name="The Jewel of the Skies" Type="Home" HOMEUID="0" SceneID="0549" config="Apartments/1001_nights/palace_apartment/scene/JewelOfTheSkies.scene"/>
+<SCENE Name="The Jewel of the Skies Open" Type="PublicLobby" HOMEUID="0" SceneID="0550" config="Apartments/1001_nights/palace_apartment/scene/JewelOfTheSkiesOpen.scene"/>
+<SCENE Name="The Kingdom of the Skies" Type="PublicLobby"  HOMEUID="0" SceneID="0548" config="apartments/1001_nights/palace_public/KingdomOfTheSkies.scene"/>
+<SCENE Name="The Lost Dam Hideout" Type="Home" HOMEUID="0" SceneID="0380" config="environments/home_internal_SCEE/personal_spaces/cave/cave.scene"/>
+<SCENE Name="The LucasArts Star Wars Cantina" Type="PublicLobby"  HOMEUID="0" SceneID="0381" config="environments/layerout/starwars.scene"/>
+<SCENE Name="The Midnight Glade" Type="PublicLobby"  HOMEUID="0" SceneID="0382" config="environments/fire_on_a_hill/Midnight.scene" />
+<SCENE Name="The Midnight Glade Apartment" Type="Home"  HOMEUID="0" SceneID="0383" config="environments/fire_on_a_hill/Midnightapt.scene" />
+<SCENE Name="The Midway" Type="PublicLobby"  HOMEUID="0" SceneID="0384" config="environments/Themidway/Themidway.scene"/>
+<SCENE Name="The Midway HotZone" Type="PublicLobby"  HOMEUID="0" SceneID="0385" config="environments/midway_hotspot/HotZone.scene"/>
+<SCENE Name="The Midway 2" Type="PublicLobby"  HOMEUID="0" SceneID="0386" config="environments/scenes/Midway2.scene"/>
+<SCENE Name="The Midway 3" Type="PublicLobby"  HOMEUID="0" SceneID="0387" config="environments/scenes/themidway3.scene"/>
+<SCENE Name="The Midway Darla's Den Personal" Type="Home" HOMEUID="0" SceneID="0388" config="environments/themidway_p_13/themidway_p_13/DarlaDen.scene"/>
+<SCENE Name="The Nether Institute Evil Acad" Type="Home" HOMEUID="0" SceneID="0389" config="environments/nis_dis3_evil_academy/disevil.scene"/>
+<SCENE Name="The Nightclub Clubhouse" Type="Home" HOMEUID="0" SceneID="0523" config="environments/nightclub_apartment/nightclubClubhouse.scene"/>
+<SCENE Name="The Nightmare Yacht" Type="Home" HOMEUID="0" SceneID="0390" config="environments/scenes/Spooky.scene"/>
+<SCENE Name="The Pearl Diver Apartment" Type="Home" HOMEUID="0" SceneID="0506" config="environments/2011/per/per_luxury_submarine/luxurysubapt.scene"/>
+<SCENE Name="The Pet Shop &amp; Aquarium" Type="PublicLobby"  HOMEUID="0" SceneID="0391" config="environments/aquariumpetshop/pet.scene"/>
+<SCENE Name="The PlayGround" Type="PublicLobby"  HOMEUID="0" SceneID="0392" config="environments/playground/pg.scene"/>
+<SCENE Name="The PS4 Experience" Type="PublicLobby"  HOMEUID="0" SceneID="0544" config="environments/PS4_Transition/PS4_Transition.scene"/>
+<SCENE Name="The Prairie Ranch Personal Spac" Type="Home" HOMEUID="0" SceneID="0393" config="apartments/simple_apartments/autumn_fields/ranch.scene" />
+<SCENE Name="The Prairie Saloon" Type="Home" HOMEUID="0" SceneID="0394" config="apartments/ranch/ranch_clubhouse/Saloon.scene" />
+<SCENE Name="The Sky Temple of Fratos" Type="Home"  HOMEUID="0" SceneID="0528" config="environments/greek_temple/SkyTempleOfFratos.scene"/>
+<SCENE Name="The Spunland Cottage" Type="PublicLobby"  HOMEUID="0" SceneID="0395" config="environments/Spunland/SPUNLAND.scene"/>
+<SCENE Name="The Windmill Apartment" Type="Home"  HOMEUID="0" SceneID="0516" config="environments/windmill/windmillapartment.scene"/>
+<SCENE Name="Thumbnailroom" SceneID="8e754987-0698-04d0-10f1-005a431815bc" Type="Home" HOMEUID="0" config="environments/thumbnailroom/thumbnailroom.scene" />
+<SCENE Name="Toro Lounge" Type="PublicLobby" HOMEUID="0" SceneID="0508" config="environments/toro_lounge01/ToroLounge.scene"/>
+<SCENE Name="TRON Apartment" Type="Home" HOMEUID="0" SceneID="0396" config="environments/tron_apartment/tron_apartment.scene"/>
+<SCENE Name="Tropical Escape SCEA" Type="Home" HOMEUID="0" SceneID="0397" config="environments/luxuryapt/island/tropical.scene"/>
+<SCENE Name="Tuscan Villa Apartment" Type="Home" HOMEUID="0" SceneID="0398" config="environments/2011/per/per_tuscan_villa/Tuscan.scene"/>
+<SCENE Name="Twilight Lounge" Type="Home" HOMEUID="0" SceneID="0489" config="Apartments/Island_Developement/Lounge_1/TwilightLounge.scene"/>
+<SCENE Name="Tycoon Penthouse" Type="Home" HOMEUID="0" SceneID="0399" config="Environments/2010/per/per_tycoonpenthouse/Tycoon.scene" />
+<SCENE Name="UFC Octagon Personal Apartment" Type="Home" HOMEUID="0" SceneID="0400" config="environments/ufc_octagon/UFC.scene"/>
+<SCENE Name="UFC Personal Space" Type="Home" HOMEUID="0" SceneID="0401" config="environments/ufc_personal/UFCapt.scene"/>
+<SCENE Name="Uncharted Artifact Room" Type="PublicLobby"  HOMEUID="0" SceneID="0402" config="environments/UnchartedArtifactRoom/UnchartedArtifactRoom.scene" />
+<SCENE Name="Uncharted: Artifact Room Behind" Type="PublicLobby"  HOMEUID="0" SceneID="0403" config="environments/unchartedroombehind/unchartedroombehind.scene"/>
+<SCENE Name="Uncharted Sully's Bar" Type="PublicLobby"  HOMEUID="0" SceneID="0404" config="environments/UnchartedBar/Sully.scene"/>
+<SCENE Name="Uncharted Fortune Hunter's Apar" Type="Home" HOMEUID="0" SceneID="0405" config="environments/uncharted_apartment/Uncharted_apartment.scene"/>
+<SCENE Name="Uncharted: Smuggler's Den" Type="PublicLobby"  HOMEUID="0" SceneID="0406" config="environments/unchartedsmugglersden/UnchartedSmugglersDen.scene"/>
+<SCENE Name="Uncharted 2 Nepalese Village" Type="PublicLobby"  HOMEUID="0" SceneID="0407" config="environments/uncharted2/Uncharted2.scene"/>
+<SCENE Name="Uncharted 2 Village Remastered" Type="PublicLobby"  HOMEUID="0" SceneID="0408" config="environments/uncharted2_rework/uncharted2V2.scene"/>
+<SCENE Name="Uncharted 3 Yemen" Type="PublicLobby"  HOMEUID="0" SceneID="0409" config="environments/uncharted3_yemen/Uncharted3_Yemen.scene"/>
+<SCENE Name="Underwater Apartment" Type="Home" HOMEUID="0" SceneID="0410" config="Environments/home_internal_scee/personal_spaces/underwater_apartment/UnderWater.scene" />
+<SCENE Name="Uproar" Type="PublicLobby"  HOMEUID="0" SceneID="0411" config="Environments/EmergencyState/emergency_state/models/uproar.scene" />
+<SCENE Name="VEEMEE's 50's Diner" Type="Home"  HOMEUID="0" SceneID="0539" config="Environments/fifties_diner/VEEMEE50Diner.scene" />
+<SCENE Name="Video Recorder Sample DEV Scene" Type="PublicLobby"  HOMEUID="0" SceneID="0412" config="Environments/MiniGameTutorial/VideoRecorderSample.scene" />
+<SCENE Name="Villains Lair" Type="Home" HOMEUID="0" SceneID="0413" config="Environments/villainslair_cave/villainslaircave.scene" />
+<SCENE Name="Virtua Tennis 4 Baseline Battle" Type="Home" HOMEUID="0" SceneID="0414" config="Environments/virtuatennisapt/VT.scene" />
+<SCENE Name="Warhawk Apartment" Type="Home" HOMEUID="0" SceneID="0415" config="environments/warhawk_apartment/warhawk_apartment.scene"/>
+<SCENE Name="Warhawk Command Center" Type="PublicLobby"  HOMEUID="0" SceneID="0416" config="Environments/Warhawk/Warhawk.scene" />
+<SCENE Name="Water Example 1.3.6 DEV Scene" Type="PublicLobby"  HOMEUID="0" SceneID="0417" config="Environments/htsspaces/htswaterexample/HTSWaterExample.scene" />
+<SCENE Name="Waterfall Terrace" Type="Home" HOMEUID="0" SceneID="0418" config="environments/treeterrace/treeterrace.scene"/>
+<SCENE Name="Western Frontier" Type="PublicLobby"  HOMEUID="0" SceneID="0419" config="environments/westernfrontier/WEST.scene"/>
+<SCENE Name="Whimsy Hollow" Type="Home"  HOMEUID="0" SceneID="0504" config="apartments/simple_apartments/hobbit_house/hobbit_house/WhimsyHollow.scene"/>
+<SCENE Name="Winter Wonderland Apartment" Type="Home" HOMEUID="0" SceneID="0420" config="environments/home_internal_scee/home_lobbies/xmas_event_2009/xmas2012apt.scene"/>
+<SCENE Name="Winter Holiday Hullabaloo 2011" Type="PublicLobby"  HOMEUID="0" SceneID="0421" config="environments/scea_winterevent/Holiday2011.scene"/>
+<SCENE Name="Winter Holiday Hullabaloo 2012" Type="PublicLobby"  HOMEUID="0" SceneID="0422" config="environments/christmas_2012/winter2012.scene"/>
+<SCENE Name="Winter Vacation Villa Personal" Type="Home" HOMEUID="0" SceneID="0423" config="environments/2010/per/per_skichalet/LuxApt_SkiChalet.scene"/>
+<SCENE Name="Winter Wonderland 2009" Type="PublicLobby"  HOMEUID="0" SceneID="0424" config="environments/home_internal_scee/home_lobbies/xmas_event_2009/xmas2009.scene"/>
+<SCENE Name="WipEout" Type="PublicLobby"  HOMEUID="0" SceneID="0425" config="environments/wipeout_homespace/wipeout.scene" />
+<SCENE Name="Wizards Den Personal Space" Type="Home" HOMEUID="0" SceneID="0426" config="environments/wz_lair/den.scene"/>
+<SCENE Name="Xi Adventure Room" Type="PublicLobby"  HOMEUID="0" SceneID="0427" config="environments/xi_alphazone1/adventure/XiAdventure.scene"/>
+<SCENE Name="Xi Alumni Hub" Type="PublicLobby"  HOMEUID="0" SceneID="0428" config="environments/xi_alumni_hub/Xi_alumni_hub.scene"/>
+<SCENE Name="Xi AlphaZone 1 Hexathlon" Type="PublicLobby"  HOMEUID="0" SceneID="0429" config="Environments/xi_alphazone1/xihex.scene" />
+<SCENE Name="Xi AlphaZone 3 ExpertMaze" Type="PublicLobby"  HOMEUID="0" SceneID="0430" config="environments/xi_alphazone3/expertmaze/redmaze.scene"/>
+<SCENE Name="Xi AlphaZone 3 RiddleMaze" Type="PublicLobby"  HOMEUID="0" SceneID="0431" config="Environments/xi_alphazone3/Riddle3.scene" />
+<SCENE Name="Xi AlphaZone 3 GhostMaze" Type="PublicLobby"  HOMEUID="0" SceneID="0432" config="Environments/xi_alphazone3/ghostmaze/AZ3_GhostMaze.scene" />
+<SCENE Name="Xi Entrance" Type="PublicLobby"  HOMEUID="0" SceneID="0433" config="environments/xi_alphazone3/entrance/XiEntrance.scene"/>
+<SCENE Name="Xi Finale - White Hall" Type="PublicLobby"  HOMEUID="0" SceneID="0434" config="Environments/xi_whiteroom/Xi_WhiteRoomFinale.scene" />
+<SCENE Name="Xi Hub" Type="PublicLobby"  HOMEUID="0" SceneID="0435" config="environments/home_internal_scee/xi_lobbies/xihub/XiHub_FieldED.scene"/>
+<SCENE Name="Xi Maximum Tilt" Type="PublicLobby"  HOMEUID="0" SceneID="0436" config="environments/xi_alphazone1/maximumtilt/Xi_AZ1_BikeRooms.scene"/>
+<SCENE Name="Yeck Land" Type="PublicLobby"  HOMEUID="0" SceneID="0437" config="environments/yeckland_rt1/yeck.scene"/>
+<SCENE Name="Yeti VS Hunter" Type="PublicLobby"  HOMEUID="0" SceneID="0438" config="environments/SCEA_Core_Plaza_Yeti/yeti.scene"/>
+<SCENE Name="x7 Entrance" Type="PublicLobby"  HOMEUID="0" SceneID="0439" config="environments/vip_club/x7door.scene"/>
+<SCENE Name="x7 VIP Club" Type="PublicLobby"  HOMEUID="0" SceneID="0440" config="environments/vip_club/x7.scene"/>
+<SCENE Name="おしゃべりファーム (Os" Type="PublicLobby"  HOMEUID="0" SceneID="0441" config="environments/farm00/OshaberiFarm.scene"/>
+<SCENE Name="おしゃべり農園 (Oshaberi" Type="Home" HOMEUID="0" SceneID="0442" config="environments/personalgarden/OshaberiFarmGardens.scene"/>
+<SCENE Name="ピークヴォックスモン" Type="PublicLobby"  HOMEUID="0" SceneID="0443" config="environments/dungeon_lounge/PeakvoxMonster.scene"/>
+<SCENE Name="夕暮れのグランゼーラ" Type="PublicLobby"  HOMEUID="0" SceneID="0444" config="lg_gzspace/a_jp_00/map/scenes/GZSquare.scene"/>
+<SCENE Name="昭栄王国ダンスフロア" Type="PublicLobby"  HOMEUID="0" SceneID="0446" config="environments/phk_lounge/KingdomJapanDanceFloor.scene"/>
+<SCENE Name="銀玉人情商店街" Type="PublicLobby"  HOMEUID="0" SceneID="0449" config="irema8/a_jp_00/map/scenes/IremMarketJapanOG.scene"/>
+<SCENE Name="おしゃべりファーム" Type="PublicLobby"  HOMEUID="0" SceneID="0450" config="environments/entrygate/entrygate.scene"/>
+</SCENELIST>

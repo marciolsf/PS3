@@ -2,7 +2,9 @@ param(
     [parameter()]$PS3IP = "10.0.0.32",
     [parameter()]$ps3URL = "http://$($PS3IP)/cpursx.html",
     [parameter()]$Pool = $true,
-    [parameter()][switch]$pretty
+    [parameter()][switch]$pretty,
+    [parameter()][switch]$list,
+    [parameter()][switch]$latest
 )
 
 process {
@@ -58,11 +60,13 @@ process {
             $fan = $fantemp.Replace("<div class='fan' style='width:", '')
             
             #now we throw everything into an array-like object
-            $array += @([PSCustomObject]@{ID = $i; CPU = $cpu; RSX = $rsx; FAN = $fan; Time = [datetime]::ParseExact($time, 'HH:mm:ss', $null) })
+            #i think the ID is throwing off the compare. Let's remove it and see what happens
+            #$array += @([PSCustomObject]@{ID = $i; CPU = $cpu; RSX = $rsx; FAN = $fan; Time = [datetime]::ParseExact($time, 'HH:mm:ss', $null) })
+            $array += @([PSCustomObject]@{CPU = $cpu; RSX = $rsx; FAN = $fan; Time = [datetime]::ParseExact($time, 'HH:mm:ss', $null) })
         }
         $finalTemp += $array
         
-        
+        $finalSorted = $finalTemp | Sort-Object -Property time | Get-Unique -AsString
         
         for ($y = 10; $y -ge 0; $y-- ) {
             Write-Progress -Activity "Seconds until next poll" -Status "$y" -PercentComplete $($y * 10)
@@ -73,7 +77,18 @@ process {
         if ($pretty) {
             $finalTemp
         } #we need to sort before we can remove duplicates
-        else { $finalTemp | Sort-Object -Property time | Get-Unique -AsString  | format-table }
+        elseif ($list) { 
+            foreach ($f in $finalSorted) { 
+                write-host $f.CPU .. $f.RSX .. $f.Fan .. $f.time  | format-table 
+            }
+        }
+        elseif ($latest) {
+            Clear-Host
+            write-host "RSX,CPU,RunTime,Fan"
+            write-host "-------------------"
+            $top = ($finalSorted.count - 1)
+            write-host $finalSorted[$top].CPU .. $finalSorted[$top].RSX .. $finalSorted[$top].Fan .. $finalSorted[$top].time  | format-table 
+        }
 
     }
 }

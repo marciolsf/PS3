@@ -246,7 +246,7 @@ function Get-HomeErrors {
             $y = $y + 1
         }
     }
-<#
+    <#
     if ($SceneFileErrors.Length -gt 0 -or $notfound.Length -gt 0 -or $objectFolderNotFound.Length -gt 0 ) {
         Write-Host "`n`n`nThe following errors were detected:`n`n`n" -ForegroundColor White
     
@@ -311,7 +311,8 @@ $inputXML = $inputXML -replace 'mc:Ignorable="d"', '' -replace "x:N", 'N' -repla
 $reader = (New-Object System.Xml.XmlNodeReader $xaml)
 try {
     $window = [Windows.Markup.XamlReader]::Load( $reader )
-} catch {
+}
+catch {
     Write-Warning $_.Exception
     throw
 }
@@ -323,30 +324,27 @@ $xaml.SelectNodes("//*[@Name]") | ForEach-Object {
     #"trying item $($_.Name)"
     try {
         Set-Variable -Name "var_$($_.Name)" -Value $window.FindName($_.Name) -ErrorAction Stop
-    } catch {
+    }
+    catch {
         throw
     }
 }
 Get-Variable var_*
 
 $var_btnQuery.Add_Click( {
-    #clear the result box
-    $var_txtResults.Text = ""
+        #clear the result box
+        $var_txtResults.Text = ""
         if ($result = Get-HomeErrors -root_folder $var_txtPath.Text) {
             foreach ($item in $result) {
                 $var_txtResults.Text = $var_txtResults.Text + "Scene/SDC errors:`n $($item.SceneFileErrors)"
                 $var_txtResults.Text = $var_txtResults.Text + "Missing Assets:`n $($item.MissingAssets)"
                 $var_txtResults.Text = $var_txtResults.Text + "Object Folder not found:`n $($item.MissingAssets)"
                 $var_txtResults.Text = $var_txtResults.Text + "Mini-game objects not found:`n $($item.MissingAssets)"
-                
-                #$var_txtResults.Text = $var_txtResults.Text + "VolumeName: $($item.VolumeName)`n"
-                #$var_txtResults.Text = $var_txtResults.Text + "FreeSpace: $($item.FreeSpace)`n"
-                #$var_txtResults.Text = $var_txtResults.Text + "Size: $($item.Size)`n`n"
             }
-            #$var_txtResults.Text = $result
         }       
-    })
- 
- $var_txtPath.Text = "C:\bin\homeclient\Playstation_Home_v0.97_Demo_002\HOME00097\USRDIR"
+    }
+    )
+    
+$var_txtPath.Text = "C:\bin\homeclient\Playstation_Home_v0.97_Demo_002\HOME00097\USRDIR"
 
 $Null = $window.ShowDialog()
